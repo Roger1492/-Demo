@@ -1,0 +1,1083 @@
+.grow{
+	transition: all .3s;
+}
+.grow:hover{
+	transform: scale(1.1, 1.1);
+}
+
+
+.shrink{
+	transition: all .3s;
+}
+.shrink:hover{
+	transform: scale(.9, .9);
+}
+
+
+.borderRadius{
+	transition: all .3s;
+}
+.borderRadius:hover{
+	border-radius: 10px;
+}
+
+
+.TopLineToRight{
+	transform: perspective(1px);
+}
+.TopLineToRight::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	width: 200px;
+	height: 5px;
+	background: #1871D6;
+	transform: scaleX(0);
+	transform-origin: 0 0;
+	transition: all .3s;
+}
+.TopLineToRight:hover::before{
+	transform: scaleX(1);
+}
+
+
+.TopLineToLeft{
+	transform: perspective(1px);
+}
+.TopLineToLeft::before{
+	content: "";
+	position: absolute;
+	z-index: -1; 
+	left: 0;
+	width: 200px;
+	height: 5px;
+	background: #1871D6;
+	transform: scaleX(0);
+	transform-origin: 100% 50%;
+	transition: all .3s;
+}
+.TopLineToLeft:hover::before{
+	transform: scaleX(1);
+}
+
+
+.BottomLineToRight{
+	transform: perspective(1px);
+}
+.BottomLineToRight::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	bottom: 0;
+	width: 200px;
+	height: 5px;
+	background: #1871D6;
+	transform: scaleX(0);
+	transform-origin: 0 100%;
+	transition: all .3s;
+}
+.BottomLineToRight:hover::before{
+	transform: scaleX(1);
+}
+
+
+.BottomLineToLeft{
+	transform: perspective(1px);
+}
+.BottomLineToLeft::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 200px;
+	height: 5px;
+	background: #1871D6;
+	transform: scaleX(0);
+	transform-origin: 100% 100%;
+	transition: all .3s;
+}
+.BottomLineToLeft:hover::before{
+	transform: scaleX(1);
+}
+
+
+.borderTop{
+	transform: perspective(1px);
+}
+.borderTop::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	background: #1871D6;
+	width: 100%;
+	height: 5px;
+	transform: scaleY(0);
+	transform-origin: 50% 0;
+	transition: all .3s;
+}
+.borderTop:hover::before{
+	transform: scaleY(1);
+}
+
+
+.borderBottom{
+	transform: perspective(1px);
+}
+.borderBottom::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	bottom: 0;
+	background: #1871D6;
+	width: 100%;
+	height: 5px;
+	transform: scaleY(0);
+	transform-origin: 50% 100%;
+	transition: all .3s;
+}
+.borderBottom:hover::before{
+	transform: scaleY(1);
+}
+
+
+.borderLeft{
+	transform: perspective(1px);
+}
+.borderLeft::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 5px;
+	height: 100%;
+	background: #1871D6;
+	transform: scaleX(0);
+	transform-origin: 0 50%;
+	transition: all .3s;
+}
+.borderLeft:hover::before{
+	transform: scaleX(1);
+}
+
+
+.borderRight{
+	transform: perspective(1px);
+}
+.borderRight::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	width: 5px;
+	height: 100%;
+	background: #1871D6;
+	transform: scaleX(0);
+	transform-origin: 100% 50%;
+	transition: all .3s;
+}
+.borderRight:hover::before{
+	transform: scaleX(1);
+}
+
+
+.borderTopCenter{
+	transform: perspective(1px);
+}
+.borderTopCenter::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background: #1871D6;
+	transform: scaleX(0);
+	transform-origin: 50% 0;
+	transition: all .3s;
+}
+.borderTopCenter:hover::before{
+	transform: scaleX(1);
+}
+
+
+.borderBottomCenter{
+	transform: perspective(1px);
+}
+.borderBottomCenter::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	bottom: 0;
+	left: 0;
+	background: #1871D6;
+	transform: scaleX(0);
+	transform-origin: 50% 100%;
+	transition: all .3s;
+}
+.borderBottomCenter:hover::before{
+	transform: scaleX(1);
+}
+
+
+.fade{
+	transition: all .3s ease-in-out;
+}
+.fade:hover{
+	color: white;
+	background: #1871D6;
+}
+
+
+.swapToRight{
+	transform: perspective(1px);
+	transition: all .3s;
+}
+.swapToRight::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #1871D6;
+	transform: scaleX(0);
+	transform-origin: 0 50%;
+	transition: all .3s;
+}
+.swapToRight:hover{
+	color: white;
+}
+.swapToRight:hover::before{
+	transform: scaleX(1);
+}
+
+
+.swapToLeft{
+	transform: perspective(1px);
+	transition: all .3s;
+}
+.swapToLeft::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #1871D6;
+	transform: scaleX(0);
+	transform-origin: 100% 50%;
+	transition: all .3s;
+}
+.swapToLeft:hover{
+	color: white;
+}
+.swapToLeft:hover::before{
+	transform: scaleX(1);
+}
+
+.swapToTop{
+	transform: perspective(1px);
+	transition: all .3s;
+}
+.swapToTop::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #1871D6;
+	transform: scaleY(0);
+	transform-origin: 50% 100%;
+	transition: all .3s;
+}
+.swapToTop:hover{
+	color: white;
+}
+.swapToTop:hover::before{
+	transform: scaleY(1);
+}
+
+
+.swapToBottom{
+	transform: perspective(1px);
+	transition: all .3s;
+}
+.swapToBottom::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: #1871D6;
+	transform: scaleY(0);
+	transform-origin: 50% 0;
+	transition: all .3s;
+}
+.swapToBottom:hover{
+	color: white;
+}
+.swapToBottom:hover::before{
+	transform: scaleY(1);
+}
+
+
+.swapUpDown{
+	transform: perspective(1px);
+	transition: all .3s;
+}
+.swapUpDown::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #1871D6;
+	transform: scaleY(0);
+	transform-origin: 50% 50%;
+	transition: all .3s;
+}
+.swapUpDown:hover{
+	color: white;
+}
+.swapUpDown:hover::before{
+	transform: scaleX(1);
+}
+
+
+.swapLeftRight{
+	transform: perspective(1px);
+	transition: all .3s;
+}
+.swapLeftRight::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: #1871D6;
+	transform: scaleX(0);
+	transform-origin: 50% 50%;
+	transition: all .3s;
+}
+.swapLeftRight:hover{
+	color: white;
+}
+.swapLeftRight:hover::before{
+	transform: scaleX(1);
+}
+
+
+.radialOut{
+	transform: perspective(1px) translateZ(0);
+	transition: all .3s;
+}
+.radialOut::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #1871D6;
+	border-radius: 100%;
+	transform: scale(0);
+	transform-origin: 50% 50%;
+	transition: all .3s;
+}
+.radialOut:hover{
+	color: white;
+}
+.radialOut:hover::before{
+	border-radius: 0;
+	transform: scale(1);
+}
+
+
+.radialIn{
+	transform: perspective(1px);
+	transition: all .3s;
+	background: #1871D6;
+}
+.radialIn::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #e1e1e1;
+	transform: scale(1);
+	transition: transform .3s;
+}
+.radialIn:hover{
+	color: white;
+}
+.radialIn:hover::before{
+	border-radius: 100%;
+	transform: scale(0);
+}
+
+
+.raveal{
+	box-shadow:  inset 0 0 0 0 #1871D6;
+	transition: all .3s;
+}
+.raveal:hover{
+	box-shadow: inset 0 0 0 5px #1871D6;
+}
+
+
+.CurlTopLeft{
+	transform: perspective(1px);
+}
+.CurlTopLeft::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	background: -webkit-linear-gradient(135deg, #1871D6, white);
+	transition: all .3s;
+}
+.CurlTopLeft:hover::before{
+	width: 25px;
+	height: 25px;
+}
+
+
+.CurlTopRight{
+	transform: perspective(1px);
+}
+.CurlTopRight::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	background: -webkit-linear-gradient(45deg, #1871D6, white);
+	transition: all .3s;
+}
+.CurlTopRight:hover::before{
+	width: 25px;
+	height: 25px;
+}
+
+
+.CurlBottomLeft{
+	transform: perspective(1px);
+}
+.CurlBottomLeft::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	background: -webkit-linear-gradient(45deg, white, #1871D6);
+	transition: all .3s;
+}
+.CurlBottomLeft:hover::before{
+	width: 25px;
+	height: 25px;
+}
+
+.CurlBottomRight{
+	transform: perspective(1px);
+}
+.CurlBottomRight::before{
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	background: -webkit-linear-gradient(135deg, white, #1871D6);
+	transition: all .3s;
+}
+.CurlBottomRight:hover::before{
+	width: 25px;
+	height: 25px;
+}
+
+
+.shake:hover{
+	animation: shake .4s ease-in-out;
+}
+@-webkit-keyframes shake{
+	0% {transform: rotate(0deg);}
+	20% {transform: rotate(10deg);}
+	40% {transform: rotate(0deg);}
+	60% {transform: rotate(-10deg);}
+	80% {transform: rotate(0deg);}
+	100% {transform: rotate(10deg);}
+}
+
+
+.shakeVertival:hover{
+	animation: shakeVertival .4s ease-in-out;
+}
+@-webkit-keyframes shakeVertival{
+	0% {transform: translateX(0px);}
+	20% {transform: translateX(6px);}
+	40% {transform: translateX(0px);}
+	60% {transform: translateX(-6px);}
+	80% {transform: translateX(0px);}
+	100% {transform: translateX(6px);}
+}
+
+
+.shakeHorizontal:hover{
+	animation: shakeHorizontal .4s ease-in-out;
+}
+@-webkit-keyframes shakeHorizontal{
+	0% {transform: translateY(0px);}
+	20% {transform: translateY(-5px);}
+	40% {transform: translateY(0px);}
+	60% {transform: translateY(5px);}
+	80% {transform: translateY(0px);}
+	100% {transform: translateY(-5px);}
+}
+
+
+.Up{
+	transition: all .3s;
+}
+.Up:hover{
+	transform: translateY(-10px);
+}
+
+
+.Down{
+	transition: all .3s;
+}
+.Down:hover{
+	transform: translateY(10px);
+}
+
+.forward{
+	transition: all .3s;
+}
+.forward:hover{
+	transform: translateX(-10px);
+}
+
+
+.backward{
+	transition: all .3s;
+}
+.backward:hover{
+	transform: translateX(10px);
+}
+
+
+.wobbleTop{
+	transform: perspective(1px);
+}
+.wobbleTop:hover{
+	animation: wobbleTop .4s;
+}
+@-webkit-keyframes wobbleTop{
+	20% {transform: skewX(15deg); transform-origin: 50% 100%}
+	40% {transform: skewX(0deg); transform-origin: 50% 100%}
+	60% {transform: skewX(-15deg); transform-origin: 50% 100%}
+	80% {transform: skewX(0deg); transform-origin: 50% 100%}
+	100% {transform: skewX(15deg); transform-origin: 50% 100%}
+}
+
+
+.wobbleBottom{
+	transform: perspective(1px);
+}
+.wobbleBottom:hover{
+	animation: wobbleBottom .4s;
+}
+@-webkit-keyframes wobbleBottom{
+	20% {transform: skewX(-15deg); transform-origin: 50% 0}
+	40% {transform: skewX(0deg); transform-origin: 50% 0}
+	60% {transform: skewX(15deg); transform-origin: 50% 0}
+	80% {transform: skewX(0deg); transform-origin: 50% 0}
+	100% {transform: skewX(-15deg); transform-origin: 50% 0}
+}
+
+
+.wobbleTopRight{
+	transition: all .3s;
+}
+.wobbleTopRight:hover{
+	animation: wobbleTopRight .3s 3;
+}
+@keyframes wobbleTopRight{
+	50%{transform: translate(5px, -5px);}
+}
+
+
+.wobbleBottomLeft{
+	transition: all .3s;
+}
+.wobbleBottomLeft:hover{
+	animation: wobbleBottomLeft .3s 3;
+}
+@keyframes wobbleBottomLeft{
+	50% {transform: translate(-5px, 5px);}
+}
+
+
+.skew:hover{
+	animation: skew .4s;
+}
+@-webkit-keyframes skew{
+	15% {transform: skewX(15deg)}
+	30% {transform: skewX(0deg)}
+	45% {transform: skewX(-15deg)}
+	60% {transform: skewX(0deg)}
+	75% {transform: skewX(15deg)}
+	90% {transform: skewX(-15deg)}
+	100% {transform: skewX(0deg)}
+}
+
+
+.buzz:hover{
+	animation:  buzz .5s infinite;
+}
+@keyframes buzz{
+	0%{ transform: rotate(0deg); transform-origin: 50% 75%; }
+	25%{ transform: rotate(20deg); transform-origin: 50% 75%; }
+	50%{ transform: rotate(0deg); transform-origin: 50% 75%; }
+	75%{ transform: rotate(-20deg); transform-origin: 50% 75%; }
+	100%{ transform: rotate(0deg); transform-origin: 50% 75%; }
+}
+
+
+.boxShadow{
+	transition: all .3s ease-in-out;
+}
+.boxShadow:hover{
+	box-shadow: 2px 2px 4px gray;
+}
+
+
+.boxShadowInset{
+	transition: all .3s;
+}
+.boxShadowInset:hover{
+	box-shadow: inset 2px 2px 4px gray;
+}
+
+
+.shadowRadial{
+	transition: all .1s;
+}
+.shadowRadial:hover{
+	box-shadow: 0 -3px 6px -4px #333, 0 3px 6px -4px #333
+}
+
+
+.glow{
+	transition: all .3s;
+}
+.glow:hover{
+	box-shadow: 0 0 2px 2px #C2BCBC;
+}
+
+
+.hollow{
+	transform: perspective(1px);
+}
+.hollow::before{
+	content: "";
+	position: absolute;
+	width: 180px;
+	height: 30px;
+	background: white;
+	z-index: -1;
+	opacity: 0;
+	transform: translate(-65px, 5px);
+	transition: all .3s;
+}
+.hollow:hover::before{
+	opacity: 1;
+}
+
+.trim{
+	transform: perspective(1px);
+}
+.trim::before{
+	content: "";
+	position: absolute;
+	width: 180px;
+	height: 25px;
+	border: 3px solid white;
+	z-index: -1;
+	opacity: 0;
+	transform: translate(-77px, 5px);
+	transition: all .3s;
+}
+.trim:hover::before{
+	opacity: 1;
+}
+
+
+.outlineOut{
+	transform: perspective(1px);
+}
+.outlineOut::before{
+	content: "";
+	position: absolute;
+	width: 194px;
+	height: 34px;
+	border: 3px solid #e1e1e1;
+	transform: translate(-68px, 0px);
+	transition: all .3s;
+}
+.outlineOut:hover::before{
+	transform: translate(-65px, 0px) scale(1.08, 1.4);
+}
+
+
+.outlineIn{
+	transform: perspective(1px);
+}
+.outlineIn::before{
+	content: "";
+	position: absolute;
+	width: 194px;
+	height: 34px;
+	border: 3px solid #e1e1e1;
+	opacity: 0;
+	transform: translate(-68px, 0px) scale(1.08, 1.4);
+	transition: all .3s;
+}
+.outlineIn:hover::before{
+	transform: translate(-68px, 0px) scale(1, 1);
+	animation: outlineIn .5s;
+}
+@keyframes outlineIn{
+	0% {opacity: 0;}
+	1% {opacity: 1;}
+	100% {opacity: 1;}
+}
+
+
+.triangleUp{
+	transform: perspective(1px);
+}
+.triangleUp::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	border-color: transparent transparent #e1e1e1 transparent;
+	transform: translate(30px, -10px);
+	transition: all .3s;
+	z-index: -10;
+}
+.triangleUp:hover::before{
+	transform: translate(30px, -20px);
+}
+
+.triangleDown{
+	transform: perspective(1px);
+}
+.triangleDown::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	transform: translate(35px, 30px);
+	border-color: #e1e1e1 transparent transparent transparent;
+	transition: all .3s;
+}
+.triangleDown:hover::before{
+	transform: translate(35px, 40px);
+}
+
+
+.triangleLeft{
+	transform: perspective(1px);
+}
+.triangleLeft::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	border-color: transparent #e1e1e1 transparent transparent;
+	transform: translate(-70px, 10px);
+	transition: all .3s;
+}
+.triangleLeft:hover::before{
+	transform: translate(-80px, 10px);
+}
+
+
+.triangleRight{
+	transform: perspective(1px);
+}
+.triangleRight::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	border-color: transparent transparent transparent #e1e1e1;
+	transform: translate(132px, 10px);
+	transition: all .3s;
+}
+.triangleRight:hover::before{
+	transform: translate(142px, 10px);
+}
+
+
+.floatTop{
+	transform: perspective(1px);
+	transition: all .3s;
+}
+.floatTop::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	border-color: transparent transparent #e1e1e1 transparent;
+	transform: translate(20px, -10px);
+	transition: all .3s;
+}
+.floatTop:hover{
+	transform: translateY(10px);
+}
+.floatTop:hover::before{
+	transform: translate(20px, -20px);
+}
+
+
+.floatDown{
+	transform: perspective(1px);
+	transition: all .3s;
+}
+.floatDown::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	border-color: #e1e1e1 transparent transparent transparent;
+	transform: translate(30px, 30px);
+	transition: all .3s;
+}
+.floatDown:hover{
+	transform: translate(0, -10px);
+}
+.floatDown:hover::before{
+	transform: translate(30px, 40px);
+}
+
+
+.floatLeft{
+	transform: perspective(1px);
+	transition: all .3s;
+}
+.floatLeft::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	border-color: transparent #e1e1e1 transparent transparent;
+	transform: translate(-80px, 10px);
+	transition: all .3s;
+}
+.floatLeft:hover{
+	transform: translate(10px, 0);
+}
+.floatLeft:hover::before{
+	transform: translate(-90px, 10px);
+}
+
+
+.floatRight{
+	transform: perspective(1px);
+	transition: all .3s;
+}
+.floatRight::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	border-color: transparent transparent transparent #e1e1e1;
+	transform: translate(123px, 10px);
+	transition: all .3s;
+}
+.floatRight:hover{
+	transform: translate(-10px, 0);
+}
+.floatRight:hover::before{
+	transform: translate(133px, 10px);
+}
+
+
+.rotateRight{
+	transition: all .3s;
+}
+.rotateRight:hover{
+	transform: rotate(20deg);
+}
+
+
+.rotateLeft{
+	transition: all .3s;
+}
+.rotateLeft:hover{
+	transform: rotate(-20deg);
+}
+
+
+
+.iconArrowUp > i,
+.iconArrowDown > i,
+.iconArrowLeft > i,
+.iconArrowRight > i,
+.iconRefresh > i,
+.iconArrowCircleUp > i,
+.iconArrowCircleDown > i,
+.iconArrowCircleLeft > i,
+.iconArrowCircleRight > i,
+.iconCircleUp > i,
+.iconCircleDown > i,
+.iconCircleLeft > i,
+.iconCircleRight > i,
+.iconPush > i,
+.iconLock > i,
+.iconPlus > i,
+.iconMinus > i{
+	display: inline-block;
+	margin: 0 10px;
+	transition: all .3s;
+}
+.iconArrowUp:hover > i{
+	transform: translateY(-5px);
+}
+.iconArrowDown:hover > i{
+	transform: translateY(5px);
+}
+.iconArrowLeft:hover > i{
+	transform: translateX(-10px);
+}
+.iconArrowRight:hover > i{
+	transform: translateX(10px);
+}
+.iconRefresh:hover > i{
+	transform: rotate(360deg);
+}
+.iconArrowCircleUp:hover > i{
+	animation: iconArrowCircleUp .3s;
+}
+.iconArrowCircleDown:hover > i{
+	animation: iconArrowCircleDown .3s;
+}
+.iconArrowCircleLeft:hover > i{
+	animation: iconArrowCircleLeft .3s;
+}
+.iconArrowCircleRight:hover > i{
+	animation: iconArrowCircleRight .3s;
+}
+@keyframes iconArrowCircleUp{
+	20% {transform: translateY(-5px);}
+	40% {transform: translateY(0px);}
+	60% {transform: translateY(-5px);}
+	80% {transform: translateY(0px);}
+	100% {transform: translateY(-5px);}
+}
+@keyframes iconArrowCircleDown{
+	20% {transform: translateY(5px);}
+	40% {transform: translateY(0px);}
+	60% {transform: translateY(5px);}
+	80% {transform: translateY(0px);}
+	100% {transform: translateY(5px);}
+}
+@keyframes iconArrowCircleLeft{
+	20% {transform: translateX(-10px);}
+	40% {transform: translateX(0px);}
+	60% {transform: translateX(10px);}
+	80% {transform: translateX(0px);}
+	100% {transform: translateX(-10px);}
+}
+@keyframes iconArrowCircleRight{
+	20% {transform: translateX(10px);}
+	40% {transform: translateX(0px);}
+	60% {transform: translateX(10px);}
+	80% {transform: translateX(0px);}
+	100% {transform: translateX(10px);}
+}
+.iconCircleUp:hover > i{
+	animation: iconCircleUp .3s;
+}
+.iconCircleDown:hover >i{
+	animation: iconCircleDown .3s;
+}
+.iconCircleLeft:hover > i{
+	animation: iconCircleLeft .3s;
+}
+.iconCircleRight:hover > i{
+	animation: iconCircleRight .3s;
+}
+
+@keyframes iconCircleUp{
+	0%{ opacity: 1;}
+	100%{ opacity: 0; transform: translateY(-1em); }
+}
+@keyframes iconCircleDown{
+	0% {opacity: 1;}
+	100% {opacity: 0; transform: translateY(1em);}
+}
+@keyframes iconCircleLeft{
+	0% {opacity: 1;}
+	100% {opacity: 0; transform: translateX(-1em);}
+}
+@keyframes iconCircleRight{
+	0% {opacity: 1;}
+	100% {opacity: 0; transform: translateX(1em);}
+}
+
+.iconPush:hover > i{
+	animation: iconPush .3s;
+}
+@keyframes iconPush{
+	50% {transform: scale(.7, .7);}
+}
+
+.iconLock:hover > i{
+	animation: iconLock .3s;
+}
+@keyframes iconLock{
+	15% {transform: translateX(-5px);}
+	30% {transform: translateX(0px);}
+	45% {transform: translateX(5px);}
+	60% {transform: translateX(-5px);}
+	75% {transform: translateX(0px);}
+	90% {transform: translateX(5px);}
+	100% {transform: translateX(0px);}
+}
+
+.iconPlus:hover > i{
+	transform: scale(1.3, 1.3);
+}
+.iconMinus:hover > i{
+	transform: scale(.7, .7);
+}
