@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>微软必应搜索 - 全球搜索，有问必应(Bing)</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<ul>
+			<li><a href="#">图片</a></li>
+			<li><a href="#">视频</a></li>
+			<li><a href="#">学术</a></li>
+			<li><a href="#">词典</a></li>
+			<li><a href="#">地图</a></li>
+			<li><a href="#">更多</a></li>
+			<i></i>
+			<li class="office">
+				<a href="#">Office Online</a>
+				<ul class="officeOnline">
+					<li><a href="#">Word</a></li>
+					<li><a href="#">Excel</a></li>
+					<li><a href="#">PowerPoint</a></li>
+					<li><a href="#">OneNote</a></li>
+					<li><a href="#">Sway</a></li>
+					<li><a href="#">Docs.com</a></li>
+					<li><a href="#">OneDrive</a></li>
+					<li><a href="#">日历</a></li>
+					<li><a href="#">人脉</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Outlook.com</a></li>
+		</ul>
+	</header>
+	<div class="login">
+		<ul>
+			<li><a href="#"><i class="fa fa-globe"></i>Switch to Bing in English</a></li>
+			<i></i>
+			<li class="login_a">
+				<a href="#">登录<i class="fa fa-user"></i></a>
+				<nav class="loginPopup">
+					<p>账户</p>
+					<nav>
+						<img></img>
+						<p>Microsofe账户</p>
+						<a href="#">连接</a>
+					</nav>
+				</nav>
+			</li>
+			<li class="settings_a">
+				<a href="#"><i class="fa fa-cog"></i></a>
+				<nav class="settings">
+					<ul>
+						<li><a href="#">图片收藏夹</a></li>
+						<li><a href="#">搜索历史记录</a></li>
+						<li><a href="#">设置</a></li>
+						<i></i>
+						<li>自定义主页</li>
+						<li>显示菜单栏
+							<input type="radio">
+						</li>
+					</ul>
+				</nav>
+			</li>
+		</ul>
+	</div>
+	<div class="tbody">
+		<img src="hp_zh_cn.png" alt="Microsoft Bing Logo">
+		<input type="search">
+		<button><i class="fa fa-search"></i></button>
+	</div>
+	<div class="share">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li class="qCode"></li>
+			<li></li>
+			<li></li>
+			<li class="more"></li>
+		</ul>
+	</div>
+	<nav class="qrcode">
+		下载手机必应
+		<img src="0f482622.png" alt="">
+	</nav>
+	<div class="popup">
+		<div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab odio nostrum praesentium quae laboriosam quos sapiente, blanditiis cumque impedit possimus dolorem libero suscipit enim sequi, ipsam excepturi architecto nihil saepe.</div>
+	</div>
+
+	<div class="footer">
+		<ul>
+			<li><a href="#">&copy; 2016 Microsoft</a></li>
+			<li><a href="#">京ICP备10036305号</a></li>
+			<li><a href="#">新的隐私声明和Cookie</a></li>
+			<li><a href="#">新的法律声明</a></li>
+			<li><a href="#">广告</a></li>
+			<li><a href="#">举报问题</a></li>
+			<li><a href="#">帮助</a></li>
+			<li><a href="#">反馈</a></li>
+		</ul>
+	</div>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+	<script>
+		var qcode = document.getElementsByClassName("qCode")[0];
+		var qrcode = document.getElementsByClassName("qrcode")[0];
+		var more = document.getElementsByClassName("more")[0];
+		var popup = document.getElementsByClassName("popup")[0];
+		qcode.onmouseover = function(){
+			qrcode.style.display = "block";
+		};
+		qrcode.onmouseout = function(){
+			qrcode.style.display = "none";
+		};
+		more.onclick = function(){
+			popup.style.right ="0px";
+		};
+		document.onmouseout = function(){
+			popup.style.right = "-300px";
+		};
+	</script>
+</body>
+</html>
