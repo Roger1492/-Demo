@@ -1,0 +1,25 @@
+#music-player{
+    width: 800px;
+    height: 600px;
+    background: lightgray;
+    position: relative;
+}
+#control-box{
+    width: 300px;
+    height: 200px;
+    background: gray;
+    position: relative;
+}
+#music-list{
+    width: 300px;
+    height: 400px;
+    background: red;
+    position: relative;
+}
+#lyrics{
+    width: 500px;
+    height: 600px;
+    background: blue;
+    position: relative;
+    transform: translate(300px, -600px);
+}

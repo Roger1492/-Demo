@@ -1,0 +1,84 @@
+#show2{
+  width: 400px;
+  height: 560px;
+  background: #d9d9d9;
+  overflow: auto;
+  transform: translate(415px, -615px);
+}
+::-webkit-scrollbar{
+  width: 0;
+}
+#show2 nav{
+  position: relative;
+}
+#show2 nav.person2{
+  direction: rtl;
+}
+#show2 nav img{
+  width: 30px;
+  position: absolute;
+  margin-top: 15px;
+}
+
+#show2 nav p{
+  padding: 10px;
+  border-radius: 10px;
+  text-wrap: normal;
+  max-width: 300px;
+  display: inline-block;
+  margin: 10px 40px;
+  color: #1d1c1d;
+}
+#show2 nav.person1 p{
+  background: floralwhite;
+}
+#show2 nav.person2 p{
+  background: #9FE658;
+}
+#show2 nav.person1 p::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid;
+  transform: translate(-24px, 5px);
+  border-color: transparent floralwhite transparent transparent;
+}
+#show2 nav.person2 p::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid;
+  transform: translate(24px, 5px);
+  border-color: transparent transparent transparent #9FE658;
+}
+#in2{
+  width: 400px;
+  height: 40px;
+  position: relative;
+  transform: translate(415px, -610px);
+  box-shadow: 0 -2px 0 0 gray;
+}
+#in2 input[type="text"]{
+  width: 330px;
+  height: 38px;
+  border: 1px solid gray;
+  padding: 0;
+  outline: none;
+  background: #ffffff;
+  float: left;
+  font-size: 1.2em;
+}
+#in2 input[type="button"]{
+  width: 68px;
+  height: 40px;
+  padding: 0;
+  outline: none;
+  border: none;
+  float: left;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #ffffff;
+  background: #9FE658;
+}
