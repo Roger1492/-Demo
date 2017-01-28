@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Clock</title>
+	<style>
+		#wrap{
+			width: 500px;
+			height: 500px;
+			border: 5px solid rgba(0, 0, 0, .6);
+			border-radius: 50%;
+		}
+		#wrap > div{
+			position: absolute;
+		}
+
+		#hour{
+			transform-origin: 10% 50%;
+			width: 150px;
+			height: 6px;
+			background: #000;
+			border-radius: 3px;
+		}
+		#minute{
+			transform-origin: 10% 50%;
+			width: 200px;
+			height: 4px;
+			background: #000;
+			border-radius: 2px;
+		}
+		#second{
+			transform-origin: 10% 50%;
+			width: 250px;
+			height: 2px;
+			background: #F00;
+			border-radius: 1px;
+		}
+		#showTime{
+			display: inline-block;
+			width: 80px;
+			height: 40px;
+			border: 1px solid;
+			transform: translate(290px,290px);
+			line-height: 40px;
+			text-align: center;
+			font-size: 1.5em;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="hour"></div>
+		<div id="minute"></div>
+		<div id="second"></div>
+		<div id="showTime"></div>
+	</div>
+
+	<script>
+		var hour = document.getElementById("hour");
+		var minute = document.getElementById("minute");
+		var second = document.getElementById("second");
+		var showTime = document.getElementById("showTime");
+
+		setInterval(runtime, 1000);
+		runtime();
+		function runtime(){
+			var date = new Date();
+			var hours = (date.getHours() > 14) ? (date.getHours() - 14) : date.getHours();
+			var minutes = date.getMinutes()-15;
+			var seconds =date.getSeconds()-15;
+
+			var h = 30 * hours;
+			var m = 6 * minutes;
+			var s = 6 * seconds;
+			hour.style.transform = "translate(220px,248px) rotate("+ h +"deg)";
+			minute.style.transform = "translate(220px,249px) rotate("+ m +"deg)";
+			second.style.transform = "translate(220px,250px) rotate("+ s +"deg)";
+			showTime.innerHTML = date.getHours() + ":" + date.getMinutes();
+		}
+	</script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
