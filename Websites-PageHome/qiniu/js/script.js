@@ -22,3 +22,9 @@ function smallSlider() {
         number2 = -400;
     }
 }
+
+$(function(){
+    $(".iSliderh2").click(function(){
+        $(this).next().toggle();
+    })
+})

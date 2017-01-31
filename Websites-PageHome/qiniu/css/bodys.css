@@ -107,7 +107,7 @@
 .center2 .intro2 .iSlider h2{
 	font-weight: 400;
 	font-size: 20px;
-	margin-top: 45px;
+	margin-top: 25px;
 	cursor: pointer;
 }
 .center2 .intro2 .iSlider p{
@@ -116,10 +116,11 @@
 	font-size: 13px;
 	line-height: 16px;
 	padding-bottom: 5px;
-	border-bottom: 1px solid #8C8585;
 }
-.center2 .intro2 .iSlider h2:active + p{
-	display: inline-block;
+.center2 .intro2 .iSlider hr{
+	position: relative;
+	left: -80px;
+	width: 350px;
 }
 
 .center3{
