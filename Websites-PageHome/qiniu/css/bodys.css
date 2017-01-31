@@ -1,0 +1,219 @@
+#container{
+	position: relative;
+	/* margin: 0 auto; */
+	/* width: 1200px; */
+
+}
+.center1{
+	margin: 0 auto;
+	width: 1200px;
+	height: 1200px;
+}
+.center1 .intro1{
+	width: 600px;
+	position: relative;
+	left: 50px;
+	top: 80px;
+}
+.center1 .intro1 h3{
+	font-weight: 300;
+	font-size: 24px;
+}
+.center1 .intro1 h1{
+	font-weight: 400;
+	font-size: 30px;
+}
+.center1 .intro1 p{
+	font-size: 16px;
+	line-height: 29px;
+}
+.center1 ul{
+	list-style-type: none;
+	position: relative;
+	top: 100px;
+}
+.center1 ul li{
+	width: 384px;
+	height: 300px;
+	margin-top: 30px;
+	display: inline-block;
+}
+.center1 ul li a{
+	color: #333;
+	text-decoration: none;
+}
+.center1 ul li a > img:nth-of-type(1){
+	width: 120px;
+	height: 90px;
+}
+.center1 ul li a > img:nth-of-type(2){
+	position: absolute;
+	width: 25px;
+	transform: translate(100px,-39px);
+	transition: all .3s;
+	opacity: 0;
+}
+.center1 ul li h2{
+	position: relative;
+	margin-top: 21px;
+	margin-bottom: 21px;
+	transition: all .3s;
+	cursor: pointer;
+}
+.center1 ul li h2:hover{
+	color: #1989fa;
+}
+.center1 ul li h2:hover + img{
+	opacity: 1;
+	transform: translate(90px, -39px);
+}
+.center1 ul li p{
+	width: 300px;
+	font-size: 15px;
+	line-height: 24px;
+}
+.center1 ul li a:hover{
+	color: #1989fa;
+}
+
+.center2{
+	height: 800px;
+	background: #eee;
+	margin: 0 auto;
+}
+.center2 .shots{
+	width: 700px;
+	height: 420px;
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/mockup.png') no-repeat top left;
+	background-size: 700px 417px;
+	position: relative;
+	left: 300px;
+	top: 200px;
+}
+.center2 .intro2{
+	width: 500px;
+	position: relative;
+	top: -250px;
+	left: 1100px;
+}
+.center2 .intro2 h3{
+	font-size: 20px;
+	font-weight: 300;
+}
+.center2 .intro2 h1{
+	font-weight: 400;
+	font-size: 33px;
+}
+.center2 .intro2 .iSlider h2{
+	font-weight: 400;
+	font-size: 20px;
+	margin-top: 45px;
+	cursor: pointer;
+}
+.center2 .intro2 .iSlider p{
+	display: none;
+	width: 350px;
+	font-size: 13px;
+	line-height: 16px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #8C8585;
+}
+.center2 .intro2 .iSlider h2:active + p{
+	display: inline-block;
+}
+
+.center3{
+	position: relative;
+	height: 800px;
+	width: 1100px;
+	margin: 0 auto;
+}
+.center3 .intro3{
+	width: 500px;
+	position: relative;
+	top: 100px;
+}
+.center3 .intro3 h3{
+	font-size: 20px;
+	font-weight: 300;
+}
+.center3 .intro3 h1{
+	font-weight: 400;
+	font-size: 33px;
+}
+.center3 .intro3 p{
+	font-size: 15px;
+	line-height: 25px;
+}
+.center3 ul{
+	position: relative;
+	top: 100px;
+	padding-left: 0;
+	list-style-type: none;
+}
+.center3 ul li{
+	width: 350px;
+	display: inline-block;
+}
+.center3 ul li p:nth-of-type(1){
+	font-size: 14px;
+}
+.center3 ul li p:nth-of-type(2){
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.center3 ul a{
+	display: inline-block;
+	width: 160px;
+	height: 45px;
+	background: #1989fa;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	line-height: 46px;
+	position: relative;
+	top: 50px;
+}
+
+.center4{
+	background: #f8f8f8;
+	height: 800px;
+}
+.center4 .intro4{
+	width: 1200px;
+	position: relative;
+	margin: 0 auto;
+}
+.center4 .intro4 h3{
+	padding-top: 100px;
+	font-size: 20px;
+	font-weight: 300;
+}
+.center4 .intro4 h1{
+	font-weight: 400;
+	font-size: 33px;
+}
+.center4 .intro4 p{
+	font-size: 15px;
+	line-height: 25px;
+	width: 700px;
+	padding-bottom: 50px;
+}
+.center4 .intro4 img{
+	width: 1060px;
+	height: 253px;
+}
+.center4 a{
+	background: #1989fa;
+	width: 200px;
+	display: inline-block;
+	height: 45px;
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 45px;
+	margin-left: 350px;
+	margin-top: 80px;
+}

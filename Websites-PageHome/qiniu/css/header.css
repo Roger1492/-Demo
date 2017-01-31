@@ -1,0 +1,347 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: "Microsoft YaHei";
+	color: #333;
+}
+header{
+	margin: 0 auto;
+	position: relative;
+	width: 1200px;
+	height: 90px;
+}
+header ul{
+	position: relative;
+	list-style-type: none; 
+	padding: 0;
+	margin: 0;
+}
+header ul .logo{
+	width: 50px;
+	position: relative;
+	top: 10px;
+	left: 30px;
+}
+header ul li:nth-of-type(1){
+	padding-left: 63px;
+}
+header ul li{
+	height: 90px;
+	line-height: 90px;
+	position: relative;
+	display: inline-block;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+header ul li:hover > a{
+	color: #1989fa;
+}
+header ul li:hover .sub-div1,
+header ul li:hover .sub-div2,
+header ul li:hover .sub-div3,
+header ul li:hover .sub-div4{
+	transition: all .4s ease-in-out;
+	z-index: 9999;
+}
+header ul li:hover .sub-div1{
+	transform: translateX(-477px) scaleY(1);
+}
+header ul li:hover .sub-div2{
+	transform: translateX(-754px) scaleY(1);
+}
+header ul li:hover .sub-div3{
+	transform: translateX(-821px) scaleY(1);
+}
+header ul li:hover .sub-div4{
+	transform: translateX(-934px) scaleY(1);
+}
+header ul li > a{
+	display: inline-block;
+	text-decoration: none;
+	color: #333;
+	font-size: .9rem;
+	margin: 0;
+}
+header form{
+	display: inline-block;
+	float: right;
+	line-height: 80px;
+	margin-right: 80px;
+	height: 40px;
+}
+header form a{
+	display: inline-block;
+	font-size: 0.9rem;
+	text-decoration: none;
+	text-align: center;
+	width: 75px;
+	height: 40px;
+	line-height: 40px;
+	color: #333;
+	transition: all .3s;
+}
+header form a:first-child:hover{
+	color: #1989fa;
+}
+header form a:last-child{
+	background: #1989fa;
+	color: white;
+}
+
+.sub-div1{
+	transform: translateX(-477px) scaleY(0);
+	transform-origin: 0 0;
+	width: 1980px;
+	height: 120px;
+	overflow: hidden;
+	top: 80px;
+	position: absolute;
+	border-bottom: 1px solid #E3D8D8;
+	border-top: 1px solid #E3D8D8;
+	background: #fff;
+}
+.sub-div1 a{
+	display: inline-block;
+	text-decoration: none;
+	color: #333;
+	transform: translateY(30px);
+}
+.sub-div1 a:nth-of-type(1){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/kodo.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 390px;
+}
+.sub-div1 a:nth-of-type(2){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/kodo.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 50px;
+}
+.sub-div1 a:nth-of-type(3){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/pili.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 50px;
+}
+.sub-div1 a:nth-of-type(4){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/dora.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 50px;
+}
+.sub-div1 a:nth-of-type(1):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/kodo-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+.sub-div1 a:nth-of-type(2):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/kodo-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+.sub-div1 a:nth-of-type(3):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/pili-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+.sub-div1 a:nth-of-type(4):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/dora-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+
+
+.sub-div2{
+	transform: translateX(-754px) scaleY(0);
+	transform-origin: 0 0;
+	width: 1980px;
+	height: 120px;
+	overflow: hidden;
+	background: #fff;
+	top: 80px;
+	position: absolute;
+	border-bottom: 1px solid #E3D8D8;
+	border-top: 1px solid #E3D8D8;
+}
+.sub-div2 a{
+	display: inline-block;
+	text-decoration: none;
+	color: #333;
+	transform: translateY(30px);
+}
+.sub-div2 a:nth-of-type(1){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/developer-center.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 390px;
+}
+.sub-div2 a:nth-of-type(2){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/qa-community.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 50px;
+}
+.sub-div2 a:nth-of-type(3){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/blog.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 50px;
+}
+.sub-div2 a:nth-of-type(4){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/architect.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 50px;
+}
+.sub-div2 a:nth-of-type(5){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/work-order.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 50px;
+}
+.sub-div2 a:nth-of-type(1):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/developer-center-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+.sub-div2 a:nth-of-type(2):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/qa-community-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+.sub-div2 a:nth-of-type(3):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/blog-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+.sub-div2 a:nth-of-type(4):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/architect-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+.sub-div2 a:nth-of-type(5):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/work-order-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+
+.sub-div3{
+	transform: translateX(-821px) scaleY(0);
+	transform-origin: 0 0;
+	width: 1980px;
+	height: 120px;
+	overflow: hidden;
+	top: 80px;
+	background: #fff;
+	position: absolute;
+	border-bottom: 1px solid #E3D8D8;
+	border-top: 1px solid #E3D8D8;
+}
+.sub-div3 a{
+	display: inline-block;
+	text-decoration: none;
+	color: #333;
+	transform: translateY(30px);
+}
+.sub-div3 a:nth-of-type(1){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/support.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 390px;
+}
+.sub-div3 a:nth-of-type(2){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/eco.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 50px;
+}
+.sub-div3 a:nth-of-type(3){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/cooperative-development.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 50px;
+}
+.sub-div3 a:nth-of-type(4){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/cooperation.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 50px;
+}
+.sub-div3 a:nth-of-type(5){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/link.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 50px;
+}
+.sub-div3 a:nth-of-type(1):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/support-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+.sub-div3 a:nth-of-type(2):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/eco-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+.sub-div3 a:nth-of-type(3):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/cooperative-development-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+.sub-div3 a:nth-of-type(4):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/cooperation-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+.sub-div3 a:nth-of-type(5):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/link-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+
+.sub-div4{
+	transform: translateX(-934px) scaleY(0);
+	transform-origin: 0 0;
+	top: 80px;
+	width: 1980px;
+	overflow: hidden;
+	height: 120px;
+	background: #fff;
+	position: absolute;
+	border-bottom: 1px solid #E3D8D8;
+	border-top: 1px solid #E3D8D8;
+}
+.sub-div4 a{
+	display: inline-block;
+	text-decoration: none;
+	color: #333;
+	transform: translateY(30px);
+}
+.sub-div4 a:nth-of-type(1){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/about.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 390px;
+}
+.sub-div4 a:nth-of-type(2){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/join.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 50px;
+}
+.sub-div4 a:nth-of-type(3){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/contact.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 50px;
+}
+.sub-div4 a:nth-of-type(4){
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/reports.png') no-repeat top center;
+	background-size: 24px 24px;
+	margin-left: 50px;
+}
+.sub-div4 a:nth-of-type(1):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/about-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+.sub-div4 a:nth-of-type(2):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/join-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+.sub-div4 a:nth-of-type(3):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/contact-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
+.sub-div4 a:nth-of-type(4):hover{
+	background: url('https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/menu/reports-h.png') no-repeat top center;
+	background-size: 24px 24px;
+	color: #1989fa;
+}
