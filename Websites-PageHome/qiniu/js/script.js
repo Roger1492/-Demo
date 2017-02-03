@@ -25,6 +25,6 @@ function smallSlider() {
 
 $(function(){
     $(".iSliderh2").click(function(){
-        $(this).next().toggle();
+        $(this).next().slideToggle(300);
     })
 })
