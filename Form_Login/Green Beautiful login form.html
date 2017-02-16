@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Green Beautiful Login Form</title>
+    <style>
+    body {
+        background: #AFF6D8;
+    }
+    
+    #wrapper {
+        margin: 200px auto;
+        width: 560px;
+        height: 520px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #cover,
+    #signup {
+        position: absolute;
+        display: inline-block;
+    }
+    
+    #cover {
+        top: 25px;
+        width: 230px;
+        height: 450px;
+        border-radius: 20px;
+        background: -webkit-linear-gradient(bottom left, #17C17A, #74D8B2);
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+    #cover:before {
+        content: '';
+        position: absolute;
+        top: 15px;
+        left: 230px;
+        width: 0;
+        height: 0;
+        border-width: 210px 20px;
+        border-style: solid;
+        border-color: transparent transparent transparent #55D09F;
+    }
+    
+    #cover h3,
+    #cover h1,
+    #cover p,
+    #cover span {
+        position: relative;
+        top: 100px;
+        left: 20px;
+        color: #fff;
+    }
+    
+    #cover span {
+        top: 150px;
+        left: 50px;
+    }
+    
+    #cover:hover span {
+        display: inline-block;
+        animation: run .2s 3 linear;
+    }
+    
+    @-webkit-keyframes run {
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+    
+    #signup {
+        top: 50px;
+        width: 300px;
+        height: 400px;
+        background: #fff;
+        border-radius: 0 20px 20px 0;
+        padding-left: 40px;
+        left: -120px;
+    }
+    
+    .lef {
+        transform: translateX(350px);
+    }
+    
+    #signup h1 {
+        position: relative;
+        top: 30px;
+    }
+    
+    #signup input {
+        position: relative;
+        top: 20px;
+        margin-top: 30px;
+        outline: none;
+    }
+    
+    #signup input[type='text'],
+    #signup input[type='email'],
+    #signup input[type='password'] {
+        width: 250px;
+        border-style: none none solid none;
+        border-width: 2px;
+        border-color: #ccc;
+        font-size: 18px;
+        transition: all .4s ease;
+        color: #1FC37F;
+    }
+    
+    #signup input[type='text']:focus,
+    #signup input[type='email']:focus,
+    #signup input[type='password']:focus {
+        border-color: #1FC37F;
+    }
+    
+    #signup input[type='submit'] {
+        position: relative;
+        left: 50px;
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        background: #F0BE43;
+        color: #fff;
+        font-weight: 600;
+        box-shadow: 0 0 8px 3px #F0BE43;
+        cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+    <form id="wrapper">
+        <div id="cover">
+            <h3>#001</h3>
+            <h1>DAILY UI</h1>
+            <p>Become a better designer
+                <br> in 100 days</p>
+            <span>Click here to <br> show/hide Sign Up</span>
+        </div>
+        <div id="signup">
+            <h1>Sign up</h1>
+            <input type="text" name="" id="text" placeholder="Username">
+            <br>
+            <input type="email" name="" id="email" placeholder="Email">
+            <br>
+            <input type="password" name="" id="password" placeholder="Password">
+            <br>
+            <input type="submit" value="SIGN UP">
+        </div>
+    </form>
+    <script>
+    var cover = document.getElementById("cover");
+    var signup = document.getElementById("signup");
+    cover.addEventListener("click", function() {
+        signup.classList.toggle("lef");
+        signup.style.transition = "all .8s";
+    }, false);
+    </script>
+</body>
+
+</html>
