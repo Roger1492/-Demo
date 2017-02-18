@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form Signin and Signup</title>
+	<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<style>
+		body{
+			background: #DB91D7;
+			padding: 0;
+			margin: 0;
+		}
+		#wrap{
+			position: relative;
+			width: 600px;
+			height: 500px;
+		}
+		.left,
+		.right{
+			position: relative;
+			display: table-cell;
+			width: 300px;
+			height: 500px;
+		}
+		.left{
+			background: #61D4C3;
+		}
+		.left p{
+			font-size: .9em;
+			text-align: center;
+			transform: translateY(100px);
+			color: #fff;
+		}
+		.left span{
+			display: inline-block;
+			transform: translate(80px, 380px);
+		}
+		.left span a{
+			display: inline-block;
+			color: #fff;
+			font-size: 1.2em;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			border-radius: 50%;
+			transition: all .2s;
+		}
+		.left span a:hover{
+			background: rgba(0, 0, 0, .3);
+		}
+		.right{
+			background: -webkit-linear-gradient(top, #334D5C, #1C333D);
+		}
+		.change_status{
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			width: 100px;
+			height: 25px;
+			border-radius: 12px;
+			overflow: hidden;
+			background: #495860;
+		}
+		.change_status  span{
+			display: table-cell;
+			font-size: .6em;
+			width: 50px;
+			height: 25px;
+			text-align: center;
+			line-height: 25px;
+			color: #fff;
+			cursor: pointer;
+		}
+		.change_status span:nth-of-type(2){
+			background: #61D4C3;
+		}
+		.l_form{
+			position: relative;
+			top: 90px;
+			left: 40px;
+		}
+		.l_form p{
+			color: #fff;
+			font-size: .8em;
+		}
+		.l_form input{
+			width: 200px;
+			height: 25px;
+			font-size: 16px;
+			border-width: 2px;
+			outline: none;
+			background: none;
+			border-color: transparent transparent gray transparent;
+			border-style: none none solid none;
+		}
+		.remember{
+			position: relative;
+			top: 120px;
+			left: 40px;
+		}
+		.submit{
+			position: relative;
+			top: 150px;
+			left: 40px;
+		}
+		.remember > *{
+			font-size: .8em;
+			text-decoration: none;
+			color: gray;
+		}
+		.remember > a{
+			color: #fff;
+		}
+		.submit input{
+			width: 100px;
+			height: 30px;
+			border-radius: 15px;
+			font-size: 0.8em;
+			outline: none;
+			border: none;
+			background: #61D4C3;
+			color: #fff;
+			cursor: pointer;
+		}
+		.submit span{
+			font-size: 0.7em;
+			color: gray;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="left">
+			<p>Lorem ipsum dolor sit amet, <br> consectetur adipisicing.</p>
+			<span>
+				<a href="#"><i class="fa fa-weibo"></i></a>
+				<a href="#"><i class="fa fa-wechat"></i></a>
+				<a href="#"><i class="fa fa-youtube"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+			</span>
+		</div>
+		<div class="right">
+			<div class="change_status">
+				<span>Sign In</span>
+				<span>Sign Up</span>
+			</div>
+			<div class="l_form">
+				<p>Username</p>
+				<input type="text" name="" id="text" placeholder="Username">
+				<p>password</p>
+				<input type="password" name="" id="password" placeholder="Password">
+				<p>email</p>
+				<input type="email" name="" id="email" placeholder="Email">
+			</div>
+			<div class="remember">
+				<input type="checkbox" name="" id="checkbox">
+				<span>remember passwrod</span>
+				<a href="#">Lorem ipsum</a>
+			</div>
+			<div class="submit">
+				<input type="submit" value="Sign In">
+				<span>All right received</span>
+			</div>
+		</div>
+	</div>
+	<script>
+		var change_status = document.getElementsByClassName("change_status")[0];
+		var changespan1 = change_status.getElementsByTagName("span")[0];
+		var changespan2 = change_status.getElementsByTagName("span")[1];
+		changespan1.addEventListener("click", function(){
+			this.style.background = "#61D4C3";
+			changespan2.style.background = "#495860";
+		}, false);
+		changespan2.addEventListener("click", function(){
+			this.style.background = "#61D4C3";
+			changespan1.style.background = "#495860";
+		}, false);
+	</script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
