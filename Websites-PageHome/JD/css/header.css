@@ -5,7 +5,7 @@ body{
 header{
 	width: 100vw;
 	height: 40px;
-	background: #BCB4B4;
+	background: #e3e4e5;
 }
 header ul{
 	padding: 0;
@@ -24,7 +24,7 @@ header ul li{
 header ul li:nth-of-type(1){
 	padding-left: 10px;
 	margin-right: 230px;
-	border-left: 1px solid #B5B3B3;
+	border-left: 1px solid #e3e4e5;
 }
 header ul li:nth-of-type(1):hover{
 	background: #fff;
@@ -69,7 +69,7 @@ header ul li:nth-of-type(1) table tr td{
 	cursor: pointer;
 }
 header ul li:nth-of-type(1) table tr td:hover{
-	background: gray;
+	background: #e3e4e5;
 }
 header ul li:not(:nth-of-type(1)){
 	padding-left: 11px;
@@ -85,6 +85,7 @@ header ul li:hover > a{
 }
 header ul li:nth-of-type(5):hover{
 	background: #fff;
+	border-left: 1px solid #B5B3B3;
 }
 header ul li:nth-of-type(5):hover > table{
 	display: block;
@@ -116,6 +117,7 @@ header ul li:nth-of-type(5) > table tr td a:hover{
 }
 header ul li:nth-of-type(8):hover{
 	background: #fff;
+	border-left: 1px solid #B5B3B3;
 }
 header ul li:nth-of-type(8):hover > table{
 	display: block;
@@ -141,6 +143,11 @@ header ul li:nth-of-type(8) > table tr td{
 }
 header ul li:nth-of-type(8) > table tr td a:hover{
 	color: red;
+}
+header ul li:nth-of-type(9):hover{
+	background: #fff;
+	border-left: 1px solid #B5B3B3;
+	border-right: 1px solid #B5B3B3;
 }
 header ul li:nth-of-type(9):hover > div{
 	display: block;
@@ -169,5 +176,100 @@ header ul li:nth-of-type(9) > div table tr td{
 	width: 85px;
 }
 header ul li:nth-of-type(9) > div table tr td a:hover{
+	color: red;
+}
+#search_box{
+	margin: 0 auto;
+	width: 1050px;
+	height: 150px;
+	/* border: 1px solid; */
+}
+#search_box div span input{
+	width: 550px;
+	height: 30px;
+	position: relative;
+	left: 150px;
+	top: 20px;
+	border: 1px solid red;
+	font-size: 14px;
+	text-indent: 5px;
+	outline: none;
+}
+#search_box div span button{
+	position: relative;
+	left: 95px;
+	width: 50px;
+	height: 34px;
+	top: 20px;
+	border: 1px solid red;
+	background: red;
+	outline: none;
+	cursor: pointer;
+}
+#search_box div span:nth-of-type(2){
+	position: relative;
+	left: 150px;
+	top: 20px;
+	display: inline-block;
+	color: red;
+	width: 200px;
+	height: 32px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #C4BDBD;
+}
+#search_box div span:nth-of-type(2)::after{
+	content: "购物车中还没有商品，赶紧选购吧！";
+	position: absolute;
+	display: none;
+	width: 300px;
+	height: 80px;
+	line-height: 80px;
+	color: #C4BDBD;
+	font-size: 13px;
+	left: -101px;
+	top: 32px;
+	background: #fff;
+	border: 1px solid #C4BDBD;
+	z-index: 1;
+}
+#search_box div span:nth-of-type(2):hover::after{
+	display: block;
+}
+#search_box div span button i{
+	color: #fff;
+}
+#search_box > div h4{
+	display: inline-block;
+}
+#search_box > div:nth-of-type(2){
+	position: relative;
+	top: 25px;
+	left: 150px;
+}
+#search_box > div:nth-of-type(2) > a{
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 12px;
+	color: gray;
+}
+#search_box > div:nth-of-type(3){
+	position: relative;
+	top: 45px;
+	left: 30px;
+}
+#search_box > div:nth-of-type(3) h4{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#search_box > div:nth-of-type(3) h4 a{
+	text-decoration: none;
+	color: #282626;
+}
+#search_box > div:nth-of-type(2) a:hover{
+	color: red;
+}
+#search_box > div:nth-of-type(3) h4 a:hover{
 	color: red;
 }
