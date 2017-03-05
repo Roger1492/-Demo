@@ -1,0 +1,173 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+header{
+	width: 100vw;
+	height: 40px;
+	background: #BCB4B4;
+}
+header ul{
+	padding: 0;
+	margin: 0 auto;
+	width: 1050px;
+	height: 40px;
+	list-style-type: none;
+}
+header ul li{
+	position: relative;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+}
+header ul li:nth-of-type(1){
+	padding-left: 10px;
+	margin-right: 230px;
+	border-left: 1px solid #B5B3B3;
+}
+header ul li:nth-of-type(1):hover{
+	background: #fff;
+	border-left: 1px solid #B5B3B3;
+}
+header ul li:nth-of-type(1):hover table{
+	display: inline-block;
+}
+header ul li:nth-of-type(1) span{
+	display: inline-block;
+	position: relative;
+	height: 40px;
+	width: 55px;
+}
+header ul li:nth-of-type(1) i{
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 5px;
+	color: red;
+	font-size: 16px;
+}
+header ul li:nth-of-type(1) table{
+	position: absolute;
+	display: none;
+	left: -1px;
+	width: 300px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent #B5B3B3 #B5B3B3 #B5B3B3;
+}
+header ul li:nth-of-type(1) table tr{
+	height: 33px;
+	display: block;
+	width: 300px;
+}
+header ul li:nth-of-type(1) table tr td{
+	height: 25px;
+	width: 45px;
+	display: inline-block;
+	line-height: 25px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+header ul li:nth-of-type(1) table tr td:hover{
+	background: gray;
+}
+header ul li:not(:nth-of-type(1)){
+	padding-left: 11px;
+	padding-right: 11px;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: gray;
+}
+header ul li:hover > a{
+	color: red;
+}
+header ul li:nth-of-type(5):hover{
+	background: #fff;
+}
+header ul li:nth-of-type(5):hover > table{
+	display: block;
+}
+header ul li:nth-of-type(5) > table{
+	position: absolute;
+	display: none;
+	width: 250px;
+	left: -1px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent #B5B3B3 #B5B3B3 #B5B3B3;
+}
+header ul li:nth-of-type(5) > table tr{
+	text-indent: 10px;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+}
+header ul li:nth-of-type(5) > table tr td{
+	display: inline-block;
+	width: 100px;
+}
+header ul li:nth-of-type(5) > table tr:nth-of-type(3){
+	border-bottom: 1px solid #B5B3B3;
+}
+header ul li:nth-of-type(5) > table tr td a:hover{
+	color: red;
+}
+header ul li:nth-of-type(8):hover{
+	background: #fff;
+}
+header ul li:nth-of-type(8):hover > table{
+	display: block;
+}
+header ul li:nth-of-type(8) > table{
+	position: absolute;
+	display: none;
+	left: -1px;
+	width: 200px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent #B5B3B3 #B5B3B3 #B5B3B3;
+}
+header ul li:nth-of-type(8) > table tr{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+header ul li:nth-of-type(8) > table tr th,
+header ul li:nth-of-type(8) > table tr td{
+	width: 100px;
+	text-indent: 10px;
+}
+header ul li:nth-of-type(8) > table tr td a:hover{
+	color: red;
+}
+header ul li:nth-of-type(9):hover > div{
+	display: block;
+}
+header ul li:nth-of-type(9) > div{
+	display: none;
+	position: absolute;
+	width: 1200px;
+	left: -1000px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent #B5B3B3 #B5B3B3 #B5B3B3;
+}
+header ul li:nth-of-type(9) > div table{
+	display: inline-block;
+	text-indent: 10px;
+}
+header ul li:nth-of-type(9) > div table:not(:first-child){
+	border-left: 1px solid #B5B3B3;
+}
+header ul li:nth-of-type(9) > div table tr{
+	display: block;
+	height: 35px;
+}
+header ul li:nth-of-type(9) > div table tr td{
+	width: 85px;
+}
+header ul li:nth-of-type(9) > div table tr td a:hover{
+	color: red;
+}

@@ -1,0 +1,70 @@
+#right_aside{
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 5px;
+	height: 100vh;
+	background: #7a6e6e;
+}
+#right_aside span{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	top: 40vh;
+	right: 30px;
+	line-height: 35px;
+	text-align: center;
+	background: #7a6e6e;
+	position: relative;
+	/* border-radius: 2px 0 0 2px; */
+	border-bottom: 1px solid #fff;
+	cursor: pointer;
+}
+#right_aside span i{
+	color: #fff;
+}
+#right_aside span:hover{
+	background: red;
+}
+#right_aside span:nth-of-type(7),
+#right_aside span:nth-of-type(8){
+	top: 67vh;
+}
+#right_aside span::after{
+	position: absolute;
+	width: 60px;
+	left: 0px;
+	font-size: 14px;
+	background: #7a6e6e;
+	z-index: -1;
+	transition: all .3s;
+}
+#right_aside span:nth-of-type(1)::after{
+	content: "京东会员";
+}
+#right_aside span:nth-of-type(2)::after{
+	content: "购物车";
+}
+#right_aside span:nth-of-type(3)::after{
+	content: "我的关注";
+}
+#right_aside span:nth-of-type(4)::after{
+	content: "我的足迹";
+}
+#right_aside span:nth-of-type(5)::after{
+	content: "我的消息";
+}
+#right_aside span:nth-of-type(6)::after{
+	content: "咨询JIMI";
+}
+#right_aside span:nth-of-type(7)::after{
+	content: "顶部";
+}
+#right_aside span:nth-of-type(8)::after{
+	content: "反馈";
+}
+#right_aside span:hover::after{
+	left: -60px;
+	background: red;
+	color: #fff;
+}
