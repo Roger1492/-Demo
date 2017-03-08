@@ -3,16 +3,26 @@ body{
 	margin: 0;
 }
 header{
+	position: relative;
 	width: 100vw;
 	height: 40px;
 	background: #e3e4e5;
 }
 header ul{
+	position: relative;
 	padding: 0;
 	margin: 0 auto;
 	width: 1200px;
 	height: 40px;
 	list-style-type: none;
+}
+header ul #jd_logo{
+	position: absolute;
+	height: 180px;
+	transform: translateX(8px);
+	display: inline-block;
+	background: #fff;
+	box-shadow: 1px 0 1px 0px #B6B1B1, -1px 0 1px 0px #B6B1B1;
 }
 header ul li{
 	position: relative;
@@ -200,7 +210,99 @@ header ul li:nth-of-type(9) > div table tr td{
 header ul li:nth-of-type(9) > div table tr td a:hover{
 	color: red;
 }
+header ul li:nth-of-type(10) > img{
+	position: absolute;
+	left: -3px;
+	width: 58px;
+	border: 1px solid #C7C1C1;
+	padding: 3px;
+}
+header ul li:nth-of-type(10) > a::after{
+	content: "";
+	position: absolute;
+	left: 23px;
+	bottom: -1px;
+	width: 0;
+	height: 0;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent #fff transparent;
+	z-index: 1;
+}
+header ul li:nth-of-type(10) .jd_qrcode{
+	position: absolute;
+	display: none;
+	left: -127px;
+	width: 190px;
+	height: 333px;
+	background: #fff;
+	border-width: 1px 1px 3px 1px;
+	border-style: solid;
+	border-color: #CBC2C2;
+	z-index: 1;
+}
+header ul li:nth-of-type(10):hover .jd_qrcode{
+	display: block;
+}
+header ul li:nth-of-type(10) .jd_qrcode > div{
+	height: 110px;
+	border-bottom: 1px solid #CBC2C2;
+}
+header ul li:nth-of-type(10) .jd_qrcode div img{
+	position: relative;
+	left: 10px;
+	top: 10px;
+	width: 70px;
+	padding: 3px;
+	border: 1px solid #CBC2C2;
+}
+header ul li:nth-of-type(10) .jd_qrcode > div a:nth-of-type(1){
+	display: inline-block;
+	position: relative;
+	left: 95px;
+	top: -111px;
+}
+header ul li:nth-of-type(10) .jd_qrcode > div > div p{
+	position: relative;
+	left: 94px;
+	top: -149px;
+	width: 90px;
+	height: 35px;
+	line-height: 16px;
+	color: red;
+}
+header ul li:nth-of-type(10) .jd_qrcode div div a:nth-of-type(2){
+	position: relative;
+	top: -163px;
+	left: 94px;
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background: url("H:/Code/Project-Demo/Websites-PageHome/JD/imgs/header/qrcode/sprite_mobile@1x.png") no-repeat;
+	background-position: 0 0;
+}
+header ul li:nth-of-type(10) .jd_qrcode div div a:nth-of-type(3){
+	position: relative;
+	top: -163px;
+	left: 94px;
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background: url("H:/Code/Project-Demo/Websites-PageHome/JD/imgs/header/qrcode/sprite_mobile@1x.png") no-repeat;
+	background-position: 0 -26px;
+}
+header ul li:nth-of-type(10) .jd_qrcode div div a:nth-of-type(4){
+	position: relative;
+	top: -163px;
+	left: 94px;
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background: url("H:/Code/Project-Demo/Websites-PageHome/JD/imgs/header/qrcode/sprite_mobile@1x.png") no-repeat;
+	background-position: 0 -52px;
+}
 #search_box{
+	position: relative;
 	margin: 0 auto;
 	width: 1050px;
 	height: 140px;

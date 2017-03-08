@@ -283,6 +283,10 @@
 	border-radius: 50%;
 	transform: translate(-62px, 47px);
 }
+.jd_user .jd_user_u a:nth-of-type(2):hover,
+.jd_user .jd_user_u a:nth-of-type(3):hover{
+	color: red;
+}
 .jd_user .jd_user_u p,
 .jd_user .jd_user_u a{
 	position: relative;
@@ -332,7 +336,7 @@
 	margin-left: 10px;
 }
 #jd_services .jd_news .jd_tabs a:nth-of-type(2){
-	margin-right: 78px;
+	margin-right: 64px;
 	margin-left: 10px;
 	border-left: 1px solid #D2C7C7;
 	padding-left: 10px;
@@ -368,4 +372,314 @@
 }
 #jd_services .jd_news .jd_tabs_n2{
 	display: none;
+}
+#jd_services .jd_service{
+	position: absolute;
+	overflow: hidden;
+	top: 270px;
+	width: 190px;
+	height: 209px;
+}
+#jd_services .jd_service > div:not(:nth-of-type(1)){
+	border-top: 1px solid #CBC2C2;
+}
+#jd_services .jd_service > div > span{
+	display: inline-block;
+	width: 43px;
+	height: 69px;
+	text-align: center;
+	cursor: pointer;
+}
+#jd_services .jd_service > div > span:not(:nth-of-type(1)){
+	border-left: 1px solid #CBC2C2;
+}
+#jd_services .jd_service > div > span > span{
+	display: block;
+	font-size: 12px;
+	margin-top: 6px;
+}
+#jd_services .jd_service > div > span > span:hover{
+	color: red;
+}
+#jd_services .jd_service > div > span i{
+	position: relative;
+	display: inline-block;
+	margin-top: 15px;
+}
+#jd_services .jd_service > div:nth-of-type(1):hover > span i{
+	display: none;
+	/* transition: all .2s; */
+}
+/* #jd_services .jd_service > div:nth-of-type(1) > span span{
+	transition: all .2s;
+} */
+#jd_services .jd_service > div:nth-of-type(1) > span:hover::before{
+	content: "";
+	position: absolute;
+	width: 48px;
+	height: 2px;
+	transform: translateX(-22px);
+	background: red;
+}
+.show_service{
+	transition: all .2s;
+}
+.show_service > div{
+	position: absolute;
+	top: 30px;
+	width: 190px;
+	height: 180px;
+	background: #fff;
+	z-index: 1;
+}
+.show_service .jd_s_3{
+	background: green;
+}
+.show_service .jd_s_4{
+	background: cyan;
+}
+.show_service{
+	position: relative;
+	top: 110px;
+	z-index: 1;
+}
+.jd_service div:hover .show_service{
+	top: -69px;
+}
+.jd_service > div .jd_s_close{
+	position: absolute;
+	left: 175px;
+	top: 29px;
+	display: none;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	z-index: 99;
+}
+.jd_service > div .jd_s_close::before{
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: 0px;
+	width: 14px;
+	height: 1px;
+	background: #333;
+	transform: rotate(45deg);
+}
+.jd_service > div .jd_s_close::after{
+	content: "";
+	position: absolute;
+	top: 6.5px;
+	width: 14px;
+	height: 1px;
+	background: #333;
+	transform: rotate(-45deg);
+}
+.jd_service > div .jd_s_close:hover{
+	background: rgba(0, 0, 0, .3);
+	color: red;
+}
+.jd_s_1 > div:nth-of-type(1) a{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 13px;
+	color: #333;
+	width: 52px;
+	padding: 1px 4px;
+	margin-top: 10px;
+}
+.jd_s_1 > div:nth-of-type(1) a:hover{
+	background: red;
+	color: #fff;
+}
+.jd_s_1 > div:nth-of-type(2),
+.jd_s_1 > div:nth-of-type(4){
+	position: relative;
+	top: 10px;
+	left: 10px;
+	font-size: 13px;
+}
+.jd_s_1 > div:nth-of-type(2) input,
+.jd_s_1 > div:nth-of-type(4) input{
+	width: 100px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.jd_s_1 > div:nth-of-type(2) p,
+.jd_s_1 > div:nth-of-type(4) p{
+	display: inline-block;
+	color: red;
+}
+.jd_s_1 > div:nth-of-type(2) a:nth-of-type(1),
+.jd_s_1 > div:nth-of-type(4) a:nth-of-type(1){
+	display: inline-block;
+	position: relative;
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: #fff;
+	background: red;
+	text-decoration: none;
+}
+.jd_s_1 > div:nth-of-type(2) a:nth-of-type(2),
+.jd_s_1 > div:nth-of-type(4) a:nth-of-type(2){
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	width: 63px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 8px;
+	left: -58px;
+	top: 32px;
+	font-size: 11px;
+	color: blue;
+}
+.jd_s_1 > div:nth-of-type(2) a:nth-of-type(2)::before,
+.jd_s_1 > div:nth-of-type(4) a:nth-of-type(2)::before{
+	content: "HOT";
+	position: absolute;
+	background: #3A3AE2;
+	color: #fff;
+	border-radius: 8px;
+	left: -44px;
+	font-size: 9px;
+	padding: 0px 11px;
+}
+
+
+.jd_s_1 > div:nth-of-type(3){
+	position: relative;
+	top: 10px;
+	left: 10px;
+	font-size: 13px;
+}
+.jd_s_1 > div:nth-of-type(3) input{
+	width: 100px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.jd_s_1 > div:nth-of-type(3) p{
+	display: inline-block;
+	color: red;
+}
+.jd_s_1 > div:nth-of-type(3) a:nth-of-type(1){
+	display: block;
+	position: relative;
+	top: -10px;
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: #fff;
+	background: red;
+	text-decoration: none;
+}
+.jd_s_1 > div:nth-of-type(3) a:nth-of-type(2){
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	width: 63px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 8px;
+	left: 46px;
+	font-size: 11px;
+	color: blue;
+}
+.jd_s_1 > div:nth-of-type(3) a:nth-of-type(2)::before{
+	content: "HOT";
+	position: absolute;
+	background: #3A3AE2;
+	color: #fff;
+	border-radius: 8px;
+	left: -44px;
+	font-size: 9px;
+	padding: 0px 11px;
+}
+.jd_s_1 > div:nth-of-type(2),
+.jd_s_1 > div:nth-of-type(3){
+	display: none;
+}
+.jd_s_2 > div:nth-of-type(1) a{
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	text-decoration: none;
+	font-size: 12px;
+	padding: 1px 3px;
+	color: #333;
+}
+.jd_s_2 > div:nth-of-type(1) a:hover{
+	background: red;
+	color: #fff;
+}
+.form1,
+.form2{
+	position: relative;
+	top: 24px;
+	font-size: 14px;
+}
+.form1,
+.form2{
+	display: none;
+}
+.form1 > input,
+.form2 > input{
+	margin-left: 10px;
+}
+.form1 > input[type="submit"],
+.form2 > input[type="submit"]{
+	position: relative;
+	top: 9px;
+	left: 0px;
+	color: #fff;
+	text-decoration: none;
+	padding: 4px 10px;
+	background: red;
+	border: none;
+}
+.form1 > input:nth-of-type(1),
+.form2 > input:nth-of-type(2){
+	margin-left: 24px;
+}
+.form1 a,
+.form2 a{
+	position: relative;
+	top: 10px;
+	text-decoration: none;
+	color: blue;
+	font-size: 12px;
+}
+.sentout{
+	position: relative;
+	top: 5px;
+	left: -11px;
+}
+.sentout > span{
+	position: relative;
+	display: inline-block;
+	background: #B8ADAD;
+	top: -1px;
+	left: 21px;
+	width: 40px;
+	text-align: center;
+	font-size: 12px;
+	color: #625F5F;
+	height: 22px;
+	line-height: 21px;
+	z-index: 1;
+}
+.sentout > input{
+	position: relative;
+	left: -22px;
+	text-indent: 44px;
+	height: 19px;
+	outline: none;
+	padding: 0;
+	margin: 2px;	
+	width: 130px;
 }
