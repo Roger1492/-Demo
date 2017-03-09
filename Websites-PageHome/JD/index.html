@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/aisde.css">
 	<link rel="stylesheet" href="css/jd_banner.css">
+	<link rel="stylesheet" href="css/jd_content.css">
 </head>
 <body>
 	<!-- top -->
@@ -2906,48 +2907,28 @@
 				</div>
 			</li>
 		</ul>
-		<div id="jd_slider">
-			<!-- silder show -->
-			<div id="jd_sub_slider">
-				<div class="mySlides">
-  				<a href="#"><img src="imgs/slider/5885d7daN122953b5.jpg"></a>
-				</div>
-				<div class="mySlides">
-				  <a href="#"><img src="imgs/slider/58b4d5e4N9014d9c7.jpg"></a>
-				</div>
-				<div class="mySlides">
-				  <a href="#"><img src="imgs/slider/58b5199eN7f551757.jpg"></a>
-				</div>
-				<div class="mySlides">
-				  <a href="#"><img src="imgs/slider/58b52af6N74076f30.jpg"></a>
-				</div>
-				<div class="mySlides">
-				  <a href="#"><img src="imgs/slider/58b6232cN7716d567.jpg"></a>
-				</div>
-				<div class="mySlides">
-				  <a href="#"><img src="imgs/slider/58b6d7abN64db527d.jpg"></a>
-				</div>
-				<div class="mySlides">
-				  <a href="#"><img src="imgs/slider/58b78846N61546f28.jpg"></a>
-				</div>
-				<div class="mySlides">
-				  <a href="#"><img src="imgs/slider/58b8dc8bN73f4ee2d.jpg"></a>
-				</div>
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-				<div class="dots">
-				  <span class="dot" onclick="currentSlide(1)"></span> 
-				  <span class="dot" onclick="currentSlide(2)"></span> 
-				  <span class="dot" onclick="currentSlide(3)"></span> 
-				  <span class="dot" onclick="currentSlide(4)"></span> 
-				  <span class="dot" onclick="currentSlide(5)"></span> 
-				  <span class="dot" onclick="currentSlide(6)"></span> 
-				  <span class="dot" onclick="currentSlide(7)"></span> 
-				  <span class="dot" onclick="currentSlide(8)"></span> 
-				</div>
-			</div>
-			<div id="jd_sub_s_1"><a href="#"><img src="imgs/slider/11.jpg" alt=""></a></div>
-			<div id="jd_sub_s_2"><a href="#"><img src="imgs/slider/12.jpg" alt=""></a></div>
+
+		<div class="jd_slide_banner">
+    	<ul>
+        <li><img src="imgs/slider/5885d7daN122953b5.jpg"></li>
+        <li><img src="imgs/slider/58b4d5e4N9014d9c7.jpg"></li>
+        <li><img src="imgs/slider/58b5199eN7f551757.jpg"></li>
+        <li><img src="imgs/slider/58b52af6N74076f30.jpg"></li>
+        <li><img src="imgs/slider/58b6232cN7716d567.jpg"></li>
+        <li><img src="imgs/slider/58b6d7abN64db527d.jpg"></li>
+        <li><img src="imgs/slider/58b78846N61546f28.jpg"></li>
+        <li><img src="imgs/slider/58b8dc8bN73f4ee2d.jpg"></li>
+    	</ul>
+		</div>
+		<div id="jd_sub_s_1">
+			<a href="#">
+				<img src="imgs/slider/11.jpg" alt="">
+			</a>
+		</div>
+		<div id="jd_sub_s_2">
+			<a href="#">
+				<img src="imgs/slider/12.jpg" alt="">
+			</a>
 		</div>
 		<aside id="jd_services">
 			<div class="jd_user">
@@ -3069,6 +3050,7 @@
 								<a href="#">特惠活动</a>
 							</div>
 							<div>
+							<!-- 还未完成  弹出框没添加-->
 								<form class="form1">
 									<input type="radio" name="" id="jd_radio">单程
 									<input type="radio" name="" id="jd_radio">返程
@@ -3092,13 +3074,63 @@
 									<a href="#">国际机票任性搜</a>
 								</form>
 								<form class="form3">
-									<a href="#"></a>
-									<a href="#"></a>
+									<a href="#"><img src="imgs/slider/plane_service/58281144N42162c58.jpg" alt=""></a>
+									<a href="#"><img src="imgs/slider/plane_service/58bd86bcN4ca3011c.jpg" alt=""></a>
 								</form>
 							</div>
 						</div>
-						<div class="jd_s_3"></div>
-						<div class="jd_s_4"></div>
+						<div class="jd_s_3">
+							<div>	
+								<a class="jd_s_3_1" href="#">国内/港澳台</a>
+								<a class="jd_s_3_2" href="#">促销活动</a>
+							</div>
+							<div>
+								<form action="" id="form4">
+									<span>目的地</span><input type="text" name="" id="" placeholder="北京"><br>
+									<span>入住日期</span><input type="text" name="" id=""><br>
+									<span>离店日期</span><input type="text" name="" id=""><br>
+									<input type="text" placeholder="酒店/商圈/地标">
+									<input type="submit" value="酒店查询">
+									<a href="#">订酒店上京东</a>
+								</form>
+								<div id="form5">
+									<a href="#"><img src="imgs/slider/plane_service/585b4c32N0741a2d5.jpg" alt=""></a>
+									<a href="#"><img src="imgs/slider/plane_service/585b91cbNad6d2795.jpg" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="jd_s_4">
+							<div id="game_tab">
+								<a href="#">点卡</a>
+								<a href="#">QQ</a>
+								<a href="#">页游</a>
+							</div>
+							<div class="game_content game_content1">
+								<span>游戏</span><select name="" id="" placeholder="游戏"></select><br>
+								面值<select name="" id=""></select>
+								<p>￥0.00</p><br>
+								<input type="radio" name="" id="">直充
+								<input type="radio" name="" id="">卡密<br>
+								<input type="submit" value="快速充值">
+								<a href="#">爱奇艺低至6折！</a>
+							</div>
+							<div class="game_content game_content2">
+								<span>QQ</span><select name="" id=""></select><br>
+								面值<select name="" id=""></select>
+								<p>￥0.96</p><br>
+								<input type="radio" name="" id="">直充<br>
+								<input type="submit" value="快速充值">
+								<a href="#">爱奇艺低至6折！</a>
+							</div>
+							<div class="game_content game_content3">
+								<a href="#">
+									<img src="imgs/slider/plane_service/580f00bfNf211ae69.jpg" alt="">
+								</a>
+								<a href="#">
+									<img src="imgs/slider/plane_service/580f00b6Nef4604ce.jpg" alt="">
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div>
@@ -3140,6 +3172,19 @@
 			</div>
 		</aside>
 	</div>
+	<div class="jd_content1">
+		<i class="fa fa-clock-o"></i>
+		<p>京东秒杀</p>
+		<a href="#">总有你意想不到的低价</a>
+		<span>
+				当前场次
+					<span class="jd_countdown_d"></span><strong>:</strong>
+					<span class="jd_countdown_h"></span><strong>:</strong>
+					<span class="jd_countdown_m"></span><strong>:</strong>
+					<span class="jd_countdown_s"></span>
+				后结束抢购
+		</span>
+	</div>
 	<aside id="right_aside">
 		<span><i class="fa fa-user-o"></i></span>
 		<span><i class="fa fa-cart-plus"></i></span>
@@ -3154,7 +3199,8 @@
 		<!-- Todo -->
 	</aside>
 
-	<!-- <script src="js/jquery-3.1.0.js"></script> -->
+	<script src="js/jquery-3.1.0.js"></script>
+	<script src="js/jquery.terseBanner.min.js"></script>
 	<script src="js/script.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>

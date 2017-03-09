@@ -1,42 +1,19 @@
 // 位置切换
-window.onload = function(){
-	var jd_h_location = document.getElementById("jd-h-location")
-	var location_text = document.getElementsByTagName("table")[0].getElementsByTagName("td");
-	for(var i = 0; i < location_text.length; i++){
-		location_text[i].addEventListener("click", function(){
+window.onload = function () {
+    'use strict';
+    var i, jd_h_location, location_text;
+    jd_h_location = document.getElementById("jd-h-location");
+    location_text = document.getElementsByTagName("table")[0].getElementsByTagName("td");
+	for (i = 0; i < location_text.length; i++) {
+		location_text[i].addEventListener("click", function () {
 			jd_h_location.innerHTML = this.innerHTML;
-		}, false)
+		}, false);
 	}
-}
+};
 
-//轮播图,未完成，自动轮播效果未完成
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
+$(".jd_slide_banner").terseBanner({
+	// arrow: true
+});
 
 // jd_new tab 切换和下划线移动
 // 这个以后必须要改，这个代码太烂了。
@@ -51,13 +28,13 @@ tab1.addEventListener("mouseover", function(){
 	tabhr.style.transform = "translateX(0px)";
 	tabhr.style.transition = "all .2s";
 
-}, false)
+}, false);
 tab2.addEventListener("mouseover", function(){
 	showtab1.style.display = "none";
 	showtab2.style.display = "block";
 	tabhr.style.transform = "translateX(47px)";
 	tabhr.style.transition = "all .2s";
-}, false)
+}, false);
 
 // jd_service 服务tab切换
 // 这个以后必须要改，这个代码太烂了。
@@ -74,25 +51,25 @@ phone_money.addEventListener("mouseover", function(){
 	plane1.style.display = "none";
 	hotel1.style.display = "none";
 	game1.style.display = "none";
-}, false)
+}, false);
 plane_ticket.addEventListener("mouseover", function(){
 	money1.style.display = "none";
 	plane1.style.display = "block";
 	hotel1.style.display = "none";
 	game1.style.display = "none";
-}, false)
+}, false);
 hotel.addEventListener("mouseover", function(){
 	money1.style.display = "none";
 	plane1.style.display = "none";
 	hotel1.style.display = "block";
 	game1.style.display = "none";
-}, false)
+}, false);
 game.addEventListener("mouseover", function(){
 	money1.style.display = "none";
 	plane1.style.display = "none";
 	hotel1.style.display = "none";
 	game1.style.display = "block";
-}, false)
+}, false);
 
 // 话费tab切换
 var jd_s_1 = document.getElementsByClassName("jd_s_1")[0].getElementsByTagName("div")[0];
@@ -106,17 +83,17 @@ phone_money_add.addEventListener("mouseover",function(){
 	phone_money_add1.style.display = "block";
 	rpgs_add1.style.display = "none";
 	other_add1.style.display = "none";
-}, false)
+}, false);
 rpgs_add.addEventListener("mouseover",function(){
 	phone_money_add1.style.display = "none";
 	rpgs_add1.style.display = "block";
 	other_add1.style.display = "none";
-}, false)
+}, false);
 other_add.addEventListener("mouseover",function(){
 	phone_money_add1.style.display = "none";
 	rpgs_add1.style.display = "none";
 	other_add1.style.display = "block";
-}, false)
+}, false);
 
 // 机票tab切换
 var jd_s_2 = document.getElementsByClassName("jd_s_2")[0].getElementsByTagName("div")[0];
@@ -130,14 +107,81 @@ country_plane.addEventListener("mouseover", function(){
 	form1.style.display = "block";
 	form2.style.display = "none";
 	form3.style.display = "none";
-}, false)
+}, false);
 international_plane.addEventListener("mouseover", function(){
 	form1.style.display = "none";
 	form2.style.display = "block";
 	form3.style.display = "none";
-}, false)
+}, false);
 other_plane.addEventListener("mouseover",function(){
 	form1.style.display = "none";
 	form2.style.display = "none";
 	form3.style.display = "block";
-}, false)
+}, false);
+
+// 酒店tab切换
+var jd_s_3_1 = document.getElementsByClassName("jd_s_3_1")[0];
+var jd_s_3_2 = document.getElementsByClassName("jd_s_3_2")[0];
+var form4 = document.getElementById("form4");
+var form5 = document.getElementById("form5");
+jd_s_3_1.addEventListener("mouseover", function(){
+	form4.style.display = "block";
+	form5.style.display = "none";
+}, false);
+jd_s_3_2.addEventListener("mouseover", function(){
+	form4.style.display = "none";
+	form5.style.display = "block";
+}, false);
+
+// 游戏tab切换
+var game_tab = document.getElementById("game_tab");
+var game_tab1 = game_tab.getElementsByTagName("a")[0];
+var game_tab2 = game_tab.getElementsByTagName("a")[1];
+var game_tab3 = game_tab.getElementsByTagName("a")[2];
+var game_content1 = document.getElementsByClassName("game_content1")[0];
+var game_content2 = document.getElementsByClassName("game_content2")[0];
+var game_content3 = document.getElementsByClassName("game_content3")[0];
+game_tab1.addEventListener("mouseover", function(){
+	game_content1.style.display = "block";
+	game_content2.style.display = "none";
+	game_content3.style.display = "none";
+}, false);
+game_tab2.addEventListener("mouseover", function(){
+	game_content1.style.display = "none";
+	game_content2.style.display = "block";
+	game_content3.style.display = "none";
+}, false);
+game_tab3.addEventListener("mouseover", function(){
+	game_content1.style.display = "none";
+	game_content2.style.display = "none";
+	game_content3.style.display = "block";
+}, false);
+
+// jd倒计时
+window.onload = function(){
+	function run_countdown(){
+		var jd_countdown = document.getElementById("jd_countdown");
+		var jd_countdown_d = document.getElementsByClassName("jd_countdown_d")[0];
+		var jd_countdown_h = document.getElementsByClassName("jd_countdown_h")[0];
+		var jd_countdown_m = document.getElementsByClassName("jd_countdown_m")[0];
+		var jd_countdown_s = document.getElementsByClassName("jd_countdown_s")[0];
+		var countdowun = new Date(2017,3,18,0,0,0).getTime() - 	Date.now();
+		var days = addZero(Math.floor(countdowun / 1000 / 60 / 60 /24));
+		var hours = addZero(Math.floor(countdowun / 1000 / 60 / 60 % 24));
+		var minutes = addZero(Math.floor(countdowun / 1000 / 60 % 60));
+		var seconds = addZero(Math.floor(countdowun / 1000 % 60));
+		jd_countdown_d.innerHTML = days;
+		jd_countdown_h.innerHTML = hours;
+		jd_countdown_m.innerHTML = minutes;
+		jd_countdown_s.innerHTML = seconds;
+
+		function addZero(n){
+			if(n < 10){
+				return "0" + n;
+			}
+			return "" + n;
+		}
+	}
+	setInterval(run_countdown, 1000);
+	run_countdown();
+};

@@ -23,7 +23,7 @@
 	color: #fff;
 }
 #right_aside span:hover{
-	background: red;
+	background: #E01222;
 }
 #right_aside span:nth-of-type(7),
 #right_aside span:nth-of-type(8){
@@ -64,6 +64,6 @@
 }
 #right_aside span:hover::after{
 	left: -60px;
-	background: red;
+	background: #E01222;
 	color: #fff;
 }

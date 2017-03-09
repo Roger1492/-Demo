@@ -1,0 +1,70 @@
+.jd_content1{
+	margin: 20px auto;
+	width: 1184px;
+	height: 70px;
+	background: #E01222;
+}
+.jd_content1 i{
+	position: relative;
+	left: 20px;
+	color: #fff;
+	font-size: 40px;
+	line-height: 70px;
+}
+.jd_content1 p{
+	display: inline-block;
+	height: 70px;
+}
+.jd_content1 > p{
+	position: relative;
+	top: -5px;
+	left: 20px;
+	color: #fff;
+	font-weight: 200;
+	font-size: 22px;
+}
+.jd_content1 a{
+	position: relative;
+	top: -7px;
+	left: 25px;
+	text-decoration: none;
+	color: #fff;
+}
+.jd_content1 a::after{
+	content: ">";
+	position: absolute;
+	top: 0px;
+	left: 166px;
+	border: 1px solid #fff;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 50%;
+}
+.jd_content1 > span{
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	left: 517px;
+	top: -4px;
+}
+.jd_content1 > span span{
+	display: inline-block;
+	background: rgba(0, 0, 0, .6);
+	width: 40px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 25px;
+	color: red;
+	font-weight: 700;
+}
+.jd_content1 > span strong{
+	position: relative;
+	left: 3px;
+	color: rgba(0, 0, 0, .6);
+	font-size: 30px;
+}
