@@ -1,19 +1,20 @@
 // 位置切换
-window.onload = function () {
-    'use strict';
-    var i, jd_h_location, location_text;
-    jd_h_location = document.getElementById("jd-h-location");
-    location_text = document.getElementsByTagName("table")[0].getElementsByTagName("td");
-	for (i = 0; i < location_text.length; i++) {
-		location_text[i].addEventListener("click", function () {
-			jd_h_location.innerHTML = this.innerHTML;
-		}, false);
-	}
-};
+var jd_h_location = document.getElementById("jd_h_location");
+var table_location = document.getElementById("table_location").querySelectorAll("td");
+for(var i = 0; i < table_location.length; i++){
+	table_location[i].addEventListener("click", function(){
+		jd_h_location.innerHTML = this.innerHTML;
+	}, false)
+}
 
-$(".jd_slide_banner").terseBanner({
-	// arrow: true
-});
+var jd_slide_banner = document.getElementsByClassName("jd_slide_banner")[0];
+var jd_imgs = document.getElementsByClassName("jd_imgs")[0];
+var jd_imgs_imgs = document.getElementsByClassName("jd_imgs")[0].getElementsByTagName("img");
+var jd_slide_prev = document.getElementsByClassName("jd_slide_prev")[0];
+var jd_slide_next = document.getElementsByClassName("jd_slide_next")[0];
+jd_slide_next.onclick = function(){
+	jd_imgs_imgs
+};
 
 // jd_new tab 切换和下划线移动
 // 这个以后必须要改，这个代码太烂了。
@@ -185,3 +186,5 @@ window.onload = function(){
 	setInterval(run_countdown, 1000);
 	run_countdown();
 };
+
+// jd_box1 轮播图

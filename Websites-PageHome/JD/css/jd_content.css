@@ -68,3 +68,79 @@
 	color: rgba(0, 0, 0, .6);
 	font-size: 30px;
 }
+
+.jd_box1{
+	margin: -10px auto;
+	position: relative;
+	width: 1190px;
+	height: 225px;
+	overflow: hidden;
+}
+.jd_box1 > .jd_bb_slide{
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	width: 4000px;
+	height: 225px;
+}
+.jd_box1 > .jd_bbs_prev,
+.jd_box1 > .jd_bbs_next{
+	position: relative;
+	top: 60px;
+	float: left;
+	width: 15px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	background: #cfcfcf;
+	cursor: pointer;
+	z-index: 99;
+	display: none;
+}
+.jd_box1:hover .jd_bbs_prev,
+.jd_box1:hover .jd_bbs_next{
+	display: block;
+}
+.jd_box1 > .jd_bbs_next{
+	left: 980px;
+}
+.jd_box1>.jd_bb_slide li{
+	position: relative;
+	transform: translateY(20px);
+	width: 200px;
+	height: 225px;
+	float: left;
+}
+.jd_box1>.jd_bb_slide li > a{
+	text-decoration: none;
+	color: gray;
+}
+.jd_box1>.jd_bb_slide li > a p{
+	font-size: 12px;
+	margin: 5px;
+}
+.jd_box1>.jd_bb_slide li span strong{
+	color: #f00;
+}
+.jd_box1>.jd_bb_slide li > a img{
+	transition: all .4s;
+}
+.jd_box1>.jd_bb_slide li > a:hover img{
+	transform: translateY(-10px);
+}
+.jd_box1>.jd_bb_slide li > a:hover p{
+	color: #ff0000;
+}
+.jd_box1>.jd_bb_slide li span del{
+	font-size: 12px;
+	color: gray;
+}
+.jd_box1 > a > img{
+	float: right;
+	position: relative;
+	width: 180px;
+	height: 225px;
+}

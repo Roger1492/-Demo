@@ -189,7 +189,7 @@ header ul li:nth-of-type(9) > div{
 	display: none;
 	position: absolute;
 	width: 1182px;
-	left: -1045px;
+	left: -1042px;
 	background: #fff;
 	z-index: 99;
 	border-style: solid;
@@ -215,7 +215,7 @@ header ul li:nth-of-type(9) > div table tr td a:hover{
 }
 header ul li:nth-of-type(10) > img{
 	position: absolute;
-	left: -3px;
+	left: -6px;
 	width: 58px;
 	border: 1px solid #C7C1C1;
 	padding: 3px;
@@ -223,7 +223,7 @@ header ul li:nth-of-type(10) > img{
 header ul li:nth-of-type(10) > a::after{
 	content: "";
 	position: absolute;
-	left: 23px;
+	left: 20px;
 	bottom: -1px;
 	width: 0;
 	height: 0;
@@ -235,7 +235,7 @@ header ul li:nth-of-type(10) > a::after{
 header ul li:nth-of-type(10) .jd_qrcode{
 	position: absolute;
 	display: none;
-	left: -127px;
+	left: -132px;
 	width: 190px;
 	height: 333px;
 	background: #fff;
