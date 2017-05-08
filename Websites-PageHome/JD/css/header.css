@@ -399,3 +399,84 @@ header ul li:nth-of-type(10) .jd_qrcode div div a:nth-of-type(4){
 #search_box > div:nth-of-type(3) h4 a:hover{
 	color: #E01222;
 }
+
+#scrollHeader{
+	position: fixed;
+	top: -52px;
+	width: 100vw;
+	height: 50px;
+	border-bottom: 2px solid red;
+	background: #fff;
+	z-index: 99;
+}
+#scrollHeader > div{
+	position: relative;
+	margin: 0 auto;
+	width: 1184px;
+	height: 48px;
+	right: 8px;
+	top: 2px;
+}
+#scrollHeader > div > a{
+	position: relative;
+	top: 5px;
+}
+#scrollHeader > div form{
+	position: relative;
+	left: 300px;
+	top: -30px;
+}
+#scrollHeader > div form input{
+	position: relative;
+	width: 500px;
+	height: 35px;
+	top: -9px;
+	outline: none;
+	border: none;
+	background: #ebebeb;
+	color: gray;
+	text-indent: 5px;
+}
+#scrollHeader > div form > i{
+	position: relative;
+	right: 30px;
+	color: #000;
+	top: -5px;
+}
+#scrollHeader > div form a{
+	position: relative;
+	background: red;
+	top: -8.5px;
+	left: -26px;
+	width: 50px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+}
+#leftSelect{
+	position: absolute;
+	top: 200px;
+	left: 5%;
+	width: 40px;
+	list-style-type: none;
+}
+#leftSelect li{
+	width: 36px;
+	height: 35px;
+	padding-top: 10px;
+	text-align: center;
+	background: gray;
+	font-size: 13px;
+	color: #fff;
+	cursor: pointer;
+	transition: all .1s;
+}
+#leftSelect li:hover{
+	background: red;
+}
+#leftSelect li:not(:first-child){
+	border-top: 1px solid #fff;
+}

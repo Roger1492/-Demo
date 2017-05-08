@@ -1,0 +1,209 @@
+.jd_box1 {
+  margin: -10px auto;
+  position: relative;
+  width: 1184px;
+  height: 225px;
+  overflow: hidden;
+}
+
+.jd_box1>.jd_bb_slide {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 4000px;
+  height: 225px;
+}
+
+.jd_box1>.jd_bbs_prev,
+.jd_box1>.jd_bbs_next {
+  position: relative;
+  top: 60px;
+  float: left;
+  width: 15px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  background: #cfcfcf;
+  cursor: pointer;
+  z-index: 99;
+  display: none;
+}
+
+.jd_box1:hover .jd_bbs_prev,
+.jd_box1:hover .jd_bbs_next {
+  display: block;
+}
+
+.jd_box1>.jd_bbs_next {
+  left: 974px;
+}
+
+.jd_box1>.jd_bb_slide li {
+  position: relative;
+  transform: translateY(20px);
+  width: 200px;
+  height: 225px;
+  float: left;
+}
+
+.jd_box1>.jd_bb_slide li>a {
+  text-decoration: none;
+  color: gray;
+}
+
+.jd_box1>.jd_bb_slide li>a p {
+  font-size: 12px;
+  margin: 5px;
+}
+
+.jd_box1>.jd_bb_slide li span strong {
+  color: #f00;
+}
+
+.jd_box1>.jd_bb_slide li>a img {
+  transition: all .4s;
+}
+
+.jd_box1>.jd_bb_slide li>a:hover img {
+  transform: translateY(-10px);
+}
+
+.jd_box1>.jd_bb_slide li>a:hover p {
+  color: #ff0000;
+}
+
+.jd_box1>.jd_bb_slide li span del {
+  font-size: 12px;
+  color: gray;
+}
+
+.jd_box1>a>img {
+  float: right;
+  position: relative;
+  width: 180px;
+  height: 225px;
+}
+.jd_box2{
+  position: relative;
+  margin: 30px auto;
+  width: 1194px;
+  height: 444px;
+  /*background: gray;*/
+}
+.jd_box2 > div{
+  position: relative;
+  width: 390px;
+  height: 444px;
+  float: left;
+  /* background: lightgreen; */
+}
+.jd_box2 > div > span{
+  display: inline-block;
+  width: 390px;
+  height: 50px;
+  line-height: 50px;
+  text-indent: 50px;
+  font-size: 20px;
+  color: #fff;
+}
+.jd_box2 > div > span > a{
+  display: inline-block;
+  font-size: 13px;
+  text-decoration: none;
+  color: #fff;
+  text-indent: 110px;
+}
+.jd_box2 > div > span > a::before{
+  content: ">";
+  position: absolute;
+  left: 230px;
+}
+.jd_box2 > div > span > a::after{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  top: 16px;
+  right: 36px;
+}
+.jd_box2 > div > span::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0px;
+  border-color: #fff transparent transparent #fff;
+  border-width: 10px;
+  border-style: solid;
+}
+.jd_box2 > div > span::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 3px;
+  top: 2px;
+  border-width: 8px;
+  border-style: solid;
+}
+.jd_box2 > div:nth-of-type(1) > span::after{
+  border-color: #2E828B transparent transparent #2E828B;
+}
+.jd_box2 > div:nth-of-type(2) > span::after{
+  border-color: #662E73 transparent transparent #662E73;
+}
+.jd_box2 > div:nth-of-type(3) > span::after{
+  border-color: #E45E04 transparent transparent #E45E04;
+}
+.jd_box2 > div:nth-of-type(1) > div {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  width: 185px;
+  height: 120px;
+  cursor: pointer;
+}
+.jd_box2 > div:nth-of-type(1) > div:nth-of-type(even){
+  border-left: 1px solid #DBDADA;
+}
+.jd_box2 > div:nth-of-type(1) > div:nth-of-type(3),
+.jd_box2 > div:nth-of-type(1) > div:nth-of-type(4){
+  border-top: 1px solid #DBDADA;
+  border-bottom: 1px solid #DBDADA;
+}
+.jd_box2 > div:nth-of-type(1) > div span{
+  position: relative;
+  top: -10px;
+  left: 25px;
+  display: inline-block;
+  width: 80px;
+  color: #4897A0;
+}
+.jd_box2 > div:nth-of-type(1) > div img{
+  position: relative;
+  top: 40px;
+  left: 40px;
+  width: 60px;
+  transition: all .4s;
+}
+.jd_box2 > div:nth-of-type(1) > div:hover img{
+  transform: translateX(-10px);
+}
+.jd_box2 > div:nth-of-type(1) > span {
+  background: -webkit-linear-gradient(left, #4897A0, #2E828B);
+}
+  .jd_box2 > div:nth-of-type(2) > span {
+  background: -webkit-linear-gradient(left, #76488E, #662E73);
+}
+  .jd_box2 > div:nth-of-type(3) > span {
+  background: -webkit-linear-gradient(left, #E77005, #E45E04);
+}
+.jd_box2 > div:nth-of-type(2){
+  margin: 0 12px;
+  background: lightseagreen;
+}

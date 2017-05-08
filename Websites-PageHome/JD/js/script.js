@@ -188,3 +188,15 @@ window.onload = function(){
 };
 
 // jd_box1 轮播图
+
+// scrollHeader 下拉
+var scrollHeader = document.getElementById("scrollHeader");
+document.body.onscroll = function(){
+	scrollHeader.style.transition = "all .5s";
+	if(document.body.scrollTop > 500){
+		scrollHeader.style.top = "0px";
+	}
+	if(document.body.scrollTop < 500){
+		scrollHeader.style.top = "-52px";
+	}
+};
