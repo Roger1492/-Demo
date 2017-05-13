@@ -1,0 +1,68 @@
+#todo{
+  margin: 50px auto;
+  font-family: monospace;
+  width: 400px;
+  outline: 1px solid lightgray;
+}
+h2{
+  text-align: center;
+}
+input{
+  width: 400px;
+  height: 40px;
+  font-size: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  color: lightgray;
+  transition: color .3s;
+}
+input:focus{
+  color: black;
+}
+
+p{
+  margin: 0;
+  width: 400px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border-top: 1px solid #fff;
+  overflow: hidden;
+}
+p:nth-of-type(even){
+  background: whitesmoke;
+}
+p:hover{
+  font-size: 18px;
+  cursor: pointer;
+  color: #36A285;
+}
+
+.close{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  float: right;
+  color: #000;
+  font-size:30px;
+  line-height: 35px;
+  text-align: center;
+  transition: all .3s;
+}
+.close:hover{
+  transform: rotate(90deg);
+}
+.list{
+  text-align: center;
+}
+.list_number{
+  color: #f00;
+}
+.wrongTips{
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  color: #f00;
+}

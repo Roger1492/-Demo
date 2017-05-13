@@ -200,10 +200,3 @@ document.body.onscroll = function(){
 		scrollHeader.style.top = "-52px";
 	}
 };
-
-// $(function(){
-// 	$("#jd_box2_slide1 > div").click(function(){
-// 		$(this).attr({"display": "inline-block"});
-// 		$("#jd_box2_slide1 > div").not(this).attr({"display":"none"});
-// 	})
-// })
