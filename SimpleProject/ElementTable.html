@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Element Table</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .table-one{
+      display: grid;
+      grid-template-rows: repeat(7, 1fr);
+      grid-template-columns: repeat(18, 1fr);
+      grid-gap: 5px;
+    }
+    section,span{
+      background: lightgray;
+      height: 60px;
+      text-align: center;
+      cursor: pointer;
+    }
+    section:hover{
+      background: gray;
+    }
+    .table-one section:nth-of-type(2){
+      grid-column: 18 / 19;
+    }
+    .table-one section:nth-of-type(5),
+    .table-one section:nth-of-type(13){
+      grid-column:  13 / 14;
+    }
+
+    .table-two{
+      margin-top: 10px;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr repeat(15, 2fr);
+      grid-gap: 5px;
+    }
+  </style>
+</head>
+<body>
+<div class="table">
+  <nav class="table-one">
+    <section>1 H <br>氢</section>
+    <section>2 He <br>氦</section>
+    <section>3 Li <br>锂</section>
+    <section>4 Be <br>铍</section>
+    <section>5 B <br>硼</section>
+    <section>6 C <br>碳</section>
+    <section>7 N <br>氮</section>
+    <section>8 O<br>氧</section>
+    <section>9 F<br>氟</section>
+    <section>10 Ne<br>氖</section>
+    <section>11 Na<br>钠</section>
+    <section>12 Mg<br>镁</section>
+    <section>13 Al<br>铝</section>
+    <section>14 Si<br>硅</section>
+    <section>15 P<br>磷</section>
+    <section>16 S<br>硫</section>
+    <section>17 Cl<br>氯</section>
+    <section>18 Ar<br>氩</section>
+    <section>19 K<br>钾</section>
+    <section>20 Ca<br>钙</section>
+    <section>21 Sc<br>钪</section>
+    <section>22 Ti<br>钛</section>
+    <section>23 V<br>钒</section>
+    <section>24 Cr<br>铬</section>
+    <section>25 Mn<br>锰</section>
+    <section>26 Fe<br>铁</section>
+    <section>27 Co<br>钴</section>
+    <section>28 Ni<br>镍</section>
+    <section>29 Cu<br>铜</section>
+    <section>30 Zn<br>锌</section>
+    <section>31 Ga<br>镓</section>
+    <section>32 Ge<br>锗</section>
+    <section>33 As<br>砷</section>
+    <section>34 Se<br>硒</section>
+    <section>35 Br<br>溴</section>
+    <section>36 Kr<br>氪</section>
+    <section>37 Rb<br>铷</section>
+    <section>38 Sr<br>锶</section>
+    <section>39 Y<br>钇</section>
+    <section>40 Zr<br>锆</section>
+    <section>41 Nb<br>铌</section>
+    <section>42 Mo<br>钼</section>
+    <section>43 Tc<br>锝</section>
+    <section>44 Ru<br>钌</section>
+    <section>45 Rh<br>铑</section>
+    <section>46 Pd<br>钯</section>
+    <section>47 Ag<br>银</section>
+    <section>48 Cd<br>镉</section>
+    <section>49 In<br>铟</section>
+    <section>50 Sn<br>锡</section>
+    <section>51 Sb<br>锑</section>
+    <section>52 Te<br>碲</section>
+    <section>53 I<br>碘</section>
+    <section>54 Xe<br>氙</section>
+    <section>55 Cs<br>铯</section>
+    <section>56 Ba<br>钡</section>
+    <span>57~71 <br> La-Lu</span>
+    <section>72 Hf<br>铪</section>
+    <section>73 Ta<br>钽</section>
+    <section>74 W<br>钨</section>
+    <section>75 Re<br>铼</section>
+    <section>76 Os<br>锇</section>
+    <section>77 Ir<br>铱</section>
+    <section>78 Pt<br>铂</section>
+    <section>79 Au<br>金</section>
+    <section>80 Hg<br>汞</section>
+    <section>81 Tl<br>铊</section>
+    <section>82 Pb<br>铅</section>
+    <section>83 Bi<br>铋</section>
+    <section>84 Po<br>钋</section>
+    <section>85 At<br>砹</section>
+    <section>86 Rn<br>氡</section>
+    <section>87 Fr<br>钫</section>
+    <section>88 Ra<br>镭</section>
+    <span>89~103 <br> Ac-Lr</span>
+    <section>104 Rf<br>鑪</section>
+    <section>105 Db<br>𨧀</section>
+    <section>106 Sg<br>𨭎</section>
+    <section>107 Bh<br>𨨏</section>
+    <section>108 Hs<br>𨭆</section>
+    <section>109 Mt<br>鿏</section>
+    <section>110 Uun<br>鐽</section>
+    <section>111 Uuu<br>錀</section>
+    <section>112 Uub<br>鎶</section>
+  </nav>
+  <nav class="table-two">
+    <span>镧系</span>
+    <section>57 La<br>镧</section>
+    <section>58 Ce<br>铈</section>
+    <section>59 Pr<br>镨</section>
+    <section>60 Nd<br>钕</section>
+    <section>61 Pm<br>钷</section>
+    <section>62 Sm<br>钐</section>
+    <section>63 Eu<br>铕</section>
+    <section>64 Gd<br>钆</section>
+    <section>65 Tb<br>铽</section>
+    <section>66 Dy<br>镝</section>
+    <section>67 Ho<br>钬</section>
+    <section>68 Er<br>铒</section>
+    <section>69 Tm<br>铥</section>
+    <section>70 Yb<br>镱</section>
+    <section>71 Lu<br>镥</section>
+    <span>锕系</span>
+    <section>89 Ac<br>锕</section>
+    <section>90 Th<br>钍</section>
+    <section>91 Pa<br>镤</section>
+    <section>92 U<br>铀</section>
+    <section>93 Np<br>镎</section>
+    <section>94 Pu<br>钚</section>
+    <section>95 Am<br>镅</section>
+    <section>96 Cm<br>锔</section>
+    <section>97 Bk<br>锫</section>
+    <section>98 Cf<br>锎</section>
+    <section>99 Es<br>锿</section>
+    <section>100 Fm<br>镄</section>
+    <section>101 Md<br>钔</section>
+    <section>102 No<br>锘</section>
+    <section>103 Lr<br>铹</section>
+  </nav>
+</div>
+<script>
+  // 相对原子质量
+  let relativeAtomMass = {
+    1:"1.008",2:"4.003",3:"6.941",4:"9.012",5:"10.81",6:"12.01",7:"14.01",8:"16.00",9:"19.00",10:"20.18",
+    11:"22.99",12:"24.31",13:"26.98",14:"28.09",15:"30.97",16:"32.06",17:"35.45",18:"39.95",19:"39.10",20:"40.08",
+    21:"44.96",22:"47.87",23:"50.94",24:"52.00",25:"54.94",26:"55.85",27:"58.93",28:"58.69",29:"63.55",30:"65.58",
+    31:"69.72",32:"72.63",33:"74.92",34:"78.96",35:"79.90",36:"83.80",37:"85.47",38:"87.62",39:"88.91",40:"91.22",
+    41:"92.91",42:"95.96",43:"98",44:"101.1",45:"102.9",46:"106.4",47:"107.9",48:"112.4",49:"114.8",50:"118.7",
+    51:"121.8",52:"127.6",53:"126.9",54:"131.3",55:"133",56:"137.3",57:"139",58:"140",59:"141",60:"144",
+    61:"145",62:"150.5",63:"152",64:"157",65:"159",66:"162.5",67:"165",68:"167",69:"169",70:"173",
+    71:"175",72:"178.5",73:"181",74:"184",75:"186",76:"190",77:"192",78:"195",79:"197",80:"200.6",
+    81:"204.5",82:"207",83:"209",84:"209",85:"210",86:"222",87:"223",88:"226",89:"227",90:"232",
+    91:"231",92:"238",93:"237",94:"244",95:"243",96:"247",97:"247",98:"251",99:"252",100:"257",
+    101:"258",102:"259",103:"260",104:"261",105:"262",106:"263",107:"264",108:"265",109:"266",110:"269",
+    111:"272",112:"277"
+  };
+  // 价电子
+  let valenceElectron = {
+    1:"1s1",2:"1s2",3:"2s1",4:"2s2",5:"2s2 2p1",6:"2s2 2p2",7:"2s2 2p3",8:"2s2 2p4",9:"2s2 2p5",10:"2s2 2p6",
+    11:"3s1",12:"3s2",13:"3s2 3p1",14:"3s2 3p2",15:"3s2 3p3",16:"3s2 3p4",17:"3s2 3p5",18:"3s2 3p6",19:"4s1",20:"4s2",
+    21:"3d1 4s2",22:"3d2 4s2",23:"3d3 4s2",24:"3d5 4s1",25:"3d5 4s2",26:"3d6 4s2",27:"3d7 4s2",28:"3d8 4s2",29:"3d10 4s1",30:"3d10 4s2",
+    31:"4s2 4p1",32:"4s2 4p2",33:"4s2 4p3",34:"4s2 4p4",35:"4s2 4p5",36:"4s2 4p6",37:"5s1",38:"5s2",39:"4d1 5s2",40:"4d2 5s2",
+    41:"4d4 5s1",42:"4d5 5s1",43:"4d5 5s2",44:"4d7 5s1",45:"4d8 5s1",46:"4d10",47:"4d10 5s1",48:"4d10 5s2",49:"5s2 5p1",50:"5s2 5p2",
+    51:"5s2 5p3",52:"5s2 5p4",53:"5s2 5p5",54:"5s2 5p6",55:"6s1",56:"6s2",57:"5d1 6s2",58:"4f1 5d1 6s2",59:"4f3 6s2",60:"4f4 6s2",
+    61:"4f5 6s2",62:"4f6 6s2",63:"4f7 6s2",64:"4f7 5d1 6s2",65:"4f9 6s2",66:"4f10 6s2",67:"4f11 6s2",68:"4f12 6s2",69:"4f13 6s2",70:"4f14 6s2",
+    71:"4f14 5d1 6s2",72:"5d2 6s2",73:"5d3 6s2",74:"5d4 6s2",75:"5d5 6s2",76:"5d6 6s2",77:"5d7 6s2",78:"5d9 6s1",79:"5d10 6s1",80:"5d10 6s2",
+    81:"6s2 6p1",82:"6s2 6p2",83:"6s2 6p3",84:"6s2 6p4",85:"6s2 6p5",86:"6s2 6p6",87:"7s1",88:"7s2",89:"6d1 7s2",90:"6d2 7s2",
+    91:"5f2 6d1 7s2",92:"5f3 6d1 7s2",93:"5f4 6d1 7s2",94:"5f6 7s2",95:"5f7 7s2",96:"5f7 6d1 7s2",97:"5f9 7s2",98:"5f10 7s2",99:"5f11 7s2",100:"5s12 7s2",
+    101:"5f13 7s2",102:"5f14 7s2",103:"5f14 7s27p1",104:"6d2 7s2",105:"6d3 7s2",106:"6d4 7s2",107:"6d5 7s2",108:"6d6 7s2",109:"6d7 7s2",110:"6d8 7s2",
+    111:"6d9 7s2",112:"6d10 7s2"
+  };
+  let section = document.querySelectorAll("section");
+  section.forEach(function (ele, index, arr){
+    ele.addEventListener("mouseover",function (){
+
+      let eleIndex = /[\d]{2,3}/g;
+      let eleBr = /<br>/g;
+      let eNew = document.createElement("aside");
+      let ram = document.createElement("p");
+      let ve = document.createElement("p");
+      eNew.innerHTML = this.innerHTML;
+      eNew.style.display = "block";
+      eNew.style.width = "400px";
+      eNew.style.height = "200px";
+      eNew.style.left = "8px";
+      eNew.style.top = "600px";
+      eNew.style.background = "gray";
+      eNew.style.position = "absolute";
+      ram.innerHTML = "相对原子质量：" + relativeAtomMass[index + 1];
+      ve.innerHTML = "价电子：" + valenceElectron[index + 1];
+      this.appendChild(eNew);
+      eNew.appendChild(ram);
+      eNew.appendChild(ve);
+
+      this.addEventListener("mouseout",function(){
+        eNew.remove();
+      },false);
+
+
+    },false);
+  })
+</script>
+</body>
+</html>

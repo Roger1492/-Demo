@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .wrap{
+      width: 600px;
+      height: 577px;
+      background: lightgray;
+    }
+    .search{
+      width: 500px;
+      height: 100px;
+    }
+    .search input{
+      position: relative;
+      left: 70px;
+      top: 30px;
+      border: none;
+      outline: none;
+      font-size: 20px;
+      height: 30px;
+      border-radius: 5px;
+    }
+    .search input[type="text"]{
+      width: 300px;
+      text-indent: 5px;
+    }
+    .search input[type="button"]{
+      width: 100px;
+      background: #4747C3;
+      color: #fff;
+      cursor: pointer;
+    }
+    .search input[type="button"]:hover{
+      background: #1414C0;
+    }
+    .weather{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 5px;
+    }
+    .grid{
+      min-height: 150px;
+      background: gray;
+    }
+    .grid:nth-of-type(1){
+      grid-column: 1 / 6;
+    }
+    .grid:nth-of-type(1) > div{
+      position: relative;
+      left: 100px;
+      top: 70px;
+    }
+    .grid:nth-of-type(1) > div span{
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      line-height: 50px;
+    }
+    .grid:nth-of-type(1) > div img{
+      position: relative;
+      top: 15px;
+      left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <section class="search">
+      <input type="text" placeholder="shanghai, china" class="enter">
+      <input type="button" value="Search" class="btn">
+    </section>
+    <div class="weather">
+      <section class="grid">
+        <div>
+          <span class="average_temp"></span>
+          <img src="http://l.yimg.com/a/i/us/we/52/47.gif" alt="weather icon">
+        </div>
+        <div>
+          <span class="text_today"></span><br>
+          <span class="low"></span> /
+          <span class="high"></span>
+        </div>
+      </section>
+      <section class="grid">
+        <p class="date"></p>
+        <p class="day"></p>
+        <p class="text"></p>
+        <img alt="" class="weather_icons">
+        <p class="high_temp">29</p>
+        <p class="low_temp">23</p>
+      </section>
+      <section class="grid">
+        <p class="date"></p>
+        <p class="day"></p>
+        <p class="text"></p>
+        <img alt="" class="weather_icons">
+        <p class="high_temp">29</p>
+        <p class="low_temp">23</p>
+      </section>
+      <section class="grid">
+        <p class="date"></p>
+        <p class="day"></p>
+        <p class="text"></p>
+        <img alt="" class="weather_icons">
+        <p class="high_temp">29</p>
+        <p class="low_temp">23</p>
+      </section>
+      <section class="grid">
+        <p class="date"></p>
+        <p class="day"></p>
+        <p class="text"></p>
+        <img alt="" class="weather_icons">
+        <p class="high_temp">29</p>
+        <p class="low_temp">23</p>
+      </section>
+      <section class="grid">
+        <p class="date"></p>
+        <p class="day"></p>
+        <p class="text"></p>
+        <img alt="" class="weather_icons">
+        <p class="high_temp">29</p>
+        <p class="low_temp">23</p>
+      </section>
+    </div>
+
+  </div>
+  <script>
+    (function (){
+
+      let url = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22shanghai%2C%20china%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
+      let btn = document.getElementsByClassName("btn")[0];
+      let enter = document.getElementsByClassName("enter")[0];
+      let average_temp = document.getElementsByClassName("average_temp")[0];
+      let text_today = document.getElementsByClassName("text_today")[0];
+      let low = document.getElementsByClassName("low")[0];
+      let high = document.getElementsByClassName("high")[0];
+      let date = document.querySelectorAll(".date");
+      let day = document.querySelectorAll(".day");
+      let text = document.querySelectorAll(".text");
+      let low_temp = document.querySelectorAll(".low_temp");
+      let high_temp = document.querySelectorAll(".high_temp");
+      let weather_icons = document.querySelectorAll(".weather_icons");
+
+      let xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function (){
+        if(xhr.status === 200 && xhr.readyState === 4){
+          let result = JSON.parse(xhr.responseText);
+          average_temp.innerHTML = Math.round(((parseInt(result.query.results.channel.item.forecast[0].low) + parseInt(result.query.results.channel.item.forecast[0].high)) / 2 - 32) / 1.8) + " ℃";
+          text_today.innerHTML = result.query.results.channel.item.forecast[0].text;
+          low.innerHTML = Math.round((result.query.results.channel.item.forecast[0].low - 32) / 1.8) + " ℃";
+          high.innerHTML = Math.round((result.query.results.channel.item.forecast[0].high - 32) / 1.8) + " ℃";
+          for(let i= 0; i < 5; i++){
+            date[i].innerHTML = result.query.results.channel.item.forecast[i].date;
+            day[i].innerHTML = result.query.results.channel.item.forecast[i].day;
+            text[i].innerHTML = result.query.results.channel.item.forecast[i].text;
+            low_temp[i].innerHTML = Math.round((result.query.results.channel.item.forecast[i].low - 32) / 1.8) + " ℃";
+            high_temp[i].innerHTML = Math.round((result.query.results.channel.item.forecast[i].high - 32) / 1.8) + " ℃";
+            weather_icons[i].src = "http://l.yimg.com/a/i/us/we/52/"+result.query.results.channel.item.forecast[i].code+".gif";
+          }
+        }
+      };
+      xhr.open("GET", url, true);
+      xhr.send();
+
+    }())
+  </script>
+</body>
+</html>

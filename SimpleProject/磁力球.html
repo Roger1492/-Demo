@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <style>
+    .wrap {
+        margin: 100px auto;
+        width: 500px;
+        height: 200px;
+        border-width: 5px 1px 10px 1px;
+        border-color: black;
+        border-style: solid;
+    }
+    
+    section {
+        position: relative;
+        top: -2px;
+        left: 100px;
+        width: 50px;
+        height: 150px;
+        float: left;
+    }
+    
+    span {
+        position: relative;
+        top: 100px;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid;
+        border-radius: 50%;
+        background-image: -webkit-radial-gradient(75% 30%, white, black, black);
+    }
+    
+    span::after {
+        content: "";
+        position: absolute;
+        left: 25px;
+        bottom: 51px;
+        width: 2px;
+        height: 100px;
+        background: gray;
+    }
+    
+    section:nth-of-type(1) {
+        transform: rotate(45deg);
+        transform-origin: 50% 0;
+        animation: run1 2s infinite ease-in-out;
+    }
+    
+    section:nth-of-type(6) {
+        transform-origin: 50% 0;
+        animation: run2 2s infinite ease-in-out;
+    }
+    
+    @-webkit-keyframes run1 {
+        50% {
+            transform: rotate(0);
+        }
+    }
+    
+    @-webkit-keyframes run2 {
+        50% {
+            transform: rotate(-45deg);
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <section><span></span></section>
+        <section><span></span></section>
+        <section><span></span></section>
+        <section><span></span></section>
+        <section><span></span></section>
+        <section><span></span></section>
+    </div>
+</body>
+
+</html>
